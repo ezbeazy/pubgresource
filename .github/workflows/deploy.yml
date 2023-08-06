@@ -28,6 +28,8 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
+      - name: Export static files
+        run: npm run export
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy
