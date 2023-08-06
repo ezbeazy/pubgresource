@@ -27,10 +27,10 @@ jobs:
       - name: Build project
         run: npm run build
       - name: Add .nojekyll file
-        run: touch ./.next/.nojekyll
+        run: touch ./out/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages
-          folder: .next/server/pages
+          folder: out
           clean: true
