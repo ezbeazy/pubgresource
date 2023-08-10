@@ -26,5 +26,11 @@ export default {
         </script>
         
       </>
-    )
+    ),
+    feedback: {
+      useLink: ()=>{
+        return 'https://pubgresource.com/contact'
+      } 
+    },
+    
   }
