@@ -2,5 +2,8 @@
     "index": "Home",
     "maps": "Maps",
     "weapons": "Weapons",
-    "contact": "Contact"
+    "-- More": {
+        "type": "separator",
+        "title": "More"
+      }
 }
