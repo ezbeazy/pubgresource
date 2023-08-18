@@ -6,6 +6,18 @@ export default {
     project: {
       link: 'https://github.com/shuding/nextra'
     },
+    useNextSeoProps() {
+      const { asPath } = useRouter()
+      if (asPath !== '/') {
+        return {
+          titleTemplate: '%s – PUBG Resource'
+        }
+      } else {
+        return {
+          titleTemplate: 'PUBG Resource'
+        }
+      }
+    },
     head: (
       <>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

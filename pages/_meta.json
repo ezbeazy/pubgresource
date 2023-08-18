@@ -1,6 +1,7 @@
 {
     "index": "Home",
     "maps": "Maps",
+    "vehicles": "Vehicles",
     "weapons": "Weapons",
     "-- More": {
         "type": "separator",
