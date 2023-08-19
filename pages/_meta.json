@@ -3,6 +3,8 @@
     "maps": "Maps",
     "vehicles": "Vehicles",
     "weapons": "Weapons",
+    "tactical-gear": "Tactical Gear",
+    "items": "Items",
     "-- More": {
         "type": "separator",
         "title": "More"
