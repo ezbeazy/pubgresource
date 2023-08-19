@@ -42,5 +42,15 @@ export default {
     feedback: {
       content: null,
     },
+    footer: {
+      text: (
+        <span>
+        <a href="https://pubgresource.com" target="_blank">
+          PUBG Resource
+        </a>
+        {' '}©{' '}{new Date().getFullYear()} 
+      </span>
+      )
+    }
     
   }
