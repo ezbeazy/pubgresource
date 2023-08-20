@@ -42,6 +42,9 @@ export default {
     feedback: {
       content: null,
     },
+    sidebar: {
+      defaultMenuCollapseLevel: 1,
+    },
     footer: {
       text: (
         <span>
