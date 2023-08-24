@@ -1,6 +1,3 @@
-[submodule "node_submodules/pubg"]
-	path = node_submodules/pubg
-	url = https://github.com/pubg/api-assets.git
 [submodule "submodules/pubg"]
 	path = submodules/pubg
 	url = https://github.com/pubg/api-assets.git

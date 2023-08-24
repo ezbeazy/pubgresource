@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "copy-assets": "cp -r node_submodules/pubg/Assets public/img/pubg",
+    "copy-assets": "cp -r submodules/pubg/Assets public/img/pubg",
     "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
