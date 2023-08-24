@@ -1,8 +1,8 @@
 {
   "scripts": {
     "copy-assets": "cp -r node_submodules/pubg/Assets public/img/pubg",
-    "dev": "npm run copy-assets && next dev",
-    "build": "npm run copy-assets && next build",
+    "dev": "next dev",
+    "build": "next build",
     "postbuild": "next-sitemap",
     "export": "next export",
     "start": "next start"
