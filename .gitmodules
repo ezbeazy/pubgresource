@@ -1,3 +1,3 @@
-[submodule "submodules/pubg"]
-	path = submodules/pubg
+[submodule "submodules/pubg/api-assets"]
+	path = submodules/pubg/api-assets
 	url = https://github.com/pubg/api-assets.git
