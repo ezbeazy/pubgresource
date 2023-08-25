@@ -20,6 +20,8 @@ jobs:
         uses: actions/checkout@v2
         with: 
             lfs: 'true'
+      - name: checkout LFS objects
+        run: git lfs checkout
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
