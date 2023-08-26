@@ -37,9 +37,7 @@ jobs:
       - name: Debug
         run: |
           ls -l submodules
-          ls -l submodules/pubg
-          ls -l submodules/pubg/api-assets
-          ls -l submodules/pubg/api-assets/Assets    
+          ls -l submodules/pubg 
       - name: Copy submodule assets
         run: |
           mkdir -p public/img/pubg
