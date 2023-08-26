@@ -34,7 +34,7 @@ jobs:
       - name: Copy submodule assets
         run: |
           mkdir -p public/img/pubg
-          cp -R submodules/pubg/api-assets/Assets/* public/img/pubg
+          cp -R submodules/pubg/api-assets/Assets/ public/img/pubg
       - name: Build project
         run: npm run build
       - name: Add .nojekyll file
