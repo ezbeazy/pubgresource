@@ -31,6 +31,9 @@ jobs:
         run: |
           git lfs install
           git lfs fetch --all
+      - name: Install submodules
+        run: |
+          git submodule update --init --recursive
       - name: Copy submodule assets
         run: |
           mkdir -p public/img/pubg
