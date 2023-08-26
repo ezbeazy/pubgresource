@@ -16,21 +16,25 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - name: Install Git LFS
-        run: |
-          git lfs install
-      - name: Get files
+      - name: Checkout repository
         uses: actions/checkout@v2
         with: 
             lfs: 'true'
-      - name: checkout LFS objects
-        run: git lfs pull
+            submodules: 'true'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
         run: npm ci
+      - name: Install Git LFS
+        run: |
+          git lfs install
+          git lfs fetch --all
+      - name: Copy submodule assets
+        run: |
+          mkdir -p public/img/pubg
+          cp -R submodules/pubg/api-assets/Assets/* public/img/pubg
       - name: Build project
         run: npm run build
       - name: Add .nojekyll file
