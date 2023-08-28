@@ -31,17 +31,17 @@ jobs:
         run: |
           git lfs install
           git lfs fetch --all
-      - name: Install submodules
-        run: |
-          git submodule update --init --recursive
-      - name: Debug
-        run: |
-          ls -l submodules
-          ls -l submodules/pubg 
-      - name: Copy submodule assets
-        run: |
-          mkdir -p public/img/pubg
-          cp -R submodules/pubg/Assets/ public/img/pubg
+      #- name: Install submodules
+      #   run: |
+      #    git submodule update --init --recursive
+      #- name: Debug
+      #  run: |
+      #    ls -l submodules
+      #    ls -l submodules/pubg 
+      #- name: Copy submodule assets
+      #  run: |
+      #    mkdir -p public/img/pubg
+      #    cp -R submodules/pubg/Assets/ public/img/pubg
       - name: Build project
         run: npm run build
       - name: Add .nojekyll file
