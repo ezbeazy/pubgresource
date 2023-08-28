@@ -27,10 +27,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
         run: npm ci
-      - name: Install Git LFS
-        run: |
-          git lfs install
-          git lfs fetch --all
+      #- name: Install Git LFS
+      #  run: |
+      #    git lfs install
+      #    git lfs fetch --all
       #- name: Install submodules
       #   run: |
       #    git submodule update --init --recursive

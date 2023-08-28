@@ -1,3 +1,0 @@
-[submodule "api-assets"]
-	path = submodules/pubg
-	url = https://github.com/pubg/api-assets.git
