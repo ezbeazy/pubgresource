@@ -18,9 +18,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        #with: 
-            #lfs: 'true'
-            #submodules: 'true'
+        with: 
+          clean: 'true'
+          #submodules: 'true'
+          #lfs: 'true'
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
