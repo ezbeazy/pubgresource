@@ -1,0 +1,25 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    gap: 10px;
+  }
+  
+  .image-item {
+    position: relative;
+    width: 20%;
+  }
+  
+  .image-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+  }
+  
+.image-grid img {
+  width: 20%;
+  height: auto;
+}
+  
