@@ -1,0 +1,26 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px;
+}
+
+.imageItem {
+  position: relative;
+  padding: 5px;;
+}
+
+.imageLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  color: white;
+  padding: 8px;
+  font-size: .875em;
+}
+
+.imageGrid img {
+width: 100%;
+height: auto;
+padding: 10px;
+}
