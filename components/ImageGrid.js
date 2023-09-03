@@ -18,10 +18,12 @@ const ImageGrid = ({ images }) => {
   return (
     <div className={styles.imageGrid}>
       {images.map((image, index) => (
-        <div className={styles.imageItem} key={index}>
+        <a href={image.link} key={index}>
+        <div className={styles.imageItem}>
           <img src={image.url} alt={image.label} />
           <div className={styles.imageLabel}>{image.label}</div>
         </div>
+        </a>
       ))}
     </div>
   );

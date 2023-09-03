@@ -1,0 +1,57 @@
+/* StatsBar.module.css */
+.statsWrapper {
+    margin: 10px 0;
+  }
+  
+  .barContainer {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+  }
+  
+  .damageBar,
+  .dpsBar,
+  .rofBar,
+  .velocityBar,
+  .rangeBar,
+  .stabilityBar {
+    height: 100%;
+    position: relative;
+  }
+  
+  .damageBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .dpsBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .rofBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .velocityBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .rangeBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .stabilityBar {
+    background-color: rgb(50, 92, 245);
+  }
+  
+  .indicator {
+    font-size: .75em;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  

@@ -1,6 +1,92 @@
+import StatsBar from '../../../components/StatsBar';
+import Weapon from '../../../components/Weapon';
+
+
+{/*
+WEAPON TEMPLATE
+
+## Weapon
+
+![Weapon](/img/weapons/main/Weapon.png)
+
+### Info
+
+**Caliber**:  
+**Capacity**:  
+**Damage**:  
+**Range**:  
+**Iron Sight Zero**:  
+**Fire Select**:  
+**Fire Rate**:  
+**TTK**:  
+**Vertical Recoil**:  
+**Horizontal Recoil**:  
+**Map Availability**:  
+
+### Attachments
+
+Barrel:  
+Grip:  
+Magazine:  
+Sight:  
+Stock:  
+
+IRL: Weapon  
+[Wikipedia](http://wikipedia.com)  
+[Forgotten Weapons](https://www.forgottenweapons.com)
+*/}
+
 ## Thompson
 
 ![Thompson](/img/weapons/main/Item_Weapon_Thompson_C_h.png)
+
+### Stats
+
+**Caliber**: .45acp  
+**Capacity**: 30/50  
+**Iron Sight Zero**: 100m  
+**Fire Select**: Semi / Full Auto  
+
+{/*
+**Damage**:  
+**DPS**:  
+**Rate of Fire**:  
+**Muzzel Velocity**:  
+**Stability**:  
+**Range**:  
+*/}
+
+<Weapon
+  image="/img/weapons/main/Item_Weapon_Thompson_C_h.png"
+  caliber=".45acp"
+  capacity="30/50"
+  ironSiteZero="100m"
+/>
+
+<StatsBar damage={80} dps={90} rof={70} velocity={45} range={45} stability={75} />
+
+**Map Availability**:  
+[Erengal](/maps/erengal),
+[Miramar](/maps/miramar),
+[Vikendi](/maps/vikendi),
+[Sanhok](/maps/sanhok),
+[Karakin](/maps/karakin),
+[Paramo](/maps/paramo),
+[Haven](/maps/haven),
+[Taego](/maps/taego),
+[Deston](/maps/deston)  
+
+### Attachments
+
+**Barrel**: Compensator, Flash Hider, Supressor  
+**Grip**: Vert Grip  
+**Magazine**: Quick Mag, Extended Mag, Quick Extended Mag  
+**Sight**: Red Dot, Holographic  
+**Stock**: N/A  
+
+IRL: Thompson M1A1  
+[Wikipedia](https://en.wikipedia.org/wiki/Thompson_submachine_gun)  
+[Forgotten Weapons](https://www.forgottenweapons.com/the-iconic-american-ww2-thompson-the-m1a1/)  
 
 ## UMP45
 
@@ -29,3 +115,16 @@
 ## P90
 
 ![P90](/img/weapons/main/Item_Weapon_P90_C_h.png)
+
+## Stat Sheet
+
+| Weapon | Cal | Base Damage | Capacity | DPS | Range | Fire Rate |
+| ------ | --- | ----------- | -------- | --- | ----- | --------- |
+| Thompson | .45acp | 42 | 30/50 | 100 | 45 | 20 |
+| UMP45 | .45acp | 43 | 25 |
+| Micro Uzi | 9mm | 27 | 25 |
+| Vector | 9mm | 32 | 19 |
+| PP-19 Bizon | 9mm | 36 | 53 |
+| MP5K | 9mm | 33 | 30 |
+| MP9 | 9mm | 31 | 30 |
+| P90 | 5.7 | 35 | 50 |

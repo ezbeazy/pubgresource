@@ -5,8 +5,8 @@
     "weapons": "Weapons",
     "tactical-gear": "Tactical Gear",
     "items": "Items",
-    "-- More": {
-        "type": "separator",
-        "title": "More"
-      }
+    "streamers": "Streamers",
+    "sponsor": "Sponsor",
+    "contact": "Contact",
+    "privacy": "Privacy"
 }
