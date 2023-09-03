@@ -1,6 +1,13 @@
 import styles from './Weapon.module.css';
+import weaponsData from '../data/weapons.json';
 
-const Weapon = ({ image, caliber, capacity, ironSiteZero }) => {
+const Weapon = ({ weaponName }) => {
+
+  const weapon = weaponsData.find(w => w.name === weaponName);
+  if (!weapon) return null;
+
+  const { image, caliber, capacity, ironSiteZero } = weapon;
+
   return (
     <div className={styles.weaponContainer}>
       <div className={styles.imageContainer}>
