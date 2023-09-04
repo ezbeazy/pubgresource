@@ -11,8 +11,7 @@
       "ironSiteZero": "100m",
       "fireSelect": "Semi / Full",
       "damage": 40,
-      "dps": 50,
-      "rof": 0.8,
+      "rof": 0.08,
       "velocity": 280,
       "range": 250,
       "stability": 100
@@ -29,7 +28,6 @@
       "fireSelect": "Semi / Full",
       "ironSiteZero": 100,
       "damage": 26,
-      "dps": 100,
       "rof": 0.048,
       "velocity": 350,
       "range": 150,
