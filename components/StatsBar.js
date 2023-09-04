@@ -14,8 +14,16 @@ const StatsBar = ({ weaponName }) => {
   const rofMax = 3;
   const velMax = 1000;
 
+  /*EQUATIONS*/
+
   const invertedRof = (rof, max) => 100 - ((rof/max)*100);
   const standardEquation = (value, max) => (value / max) * 100;
+
+  const calculateROF = (timeBetweenShots) => 1 / timeBetweenShots;
+  const calculateDPS = (timeBetweenShots, damagePerShot) => {
+    const rateOfFire = 1 / timeBetweenShots;
+    return rateOfFire * damagePerShot;
+  };
 
   return (
     <div className={styles.statsContainer}>
