@@ -137,10 +137,10 @@
   },
   {
     "id": 9,
-    "name": "M16A1",
+    "name": "M16A4",
     "class": "Main",
     "type": "AR",
-    "image": "/img/weapons/main/Item_Weapon_Vector_C_h.png",
+    "image": "/img/weapons/main/Item_Weapon_M16A4_C_h.png",
     "link": "/weapons/main/ar#m16a4",
     "caliber": "5.56",
     "capacity": 30,
