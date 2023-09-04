@@ -154,7 +154,7 @@
   },
   {
     "id": 10,
-    "name": "M4",
+    "name": "M416",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_HK416_C_h.png",
@@ -188,7 +188,7 @@
   },
   {
     "id": 12,
-    "name": "G36",
+    "name": "G36C",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_G36C_C_h.png",
@@ -205,7 +205,7 @@
   },
   {
     "id": 13,
-    "name": "QBZ",
+    "name": "QBZ95",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_QBZ95_C_h.png",
@@ -290,7 +290,7 @@
   },
   {
     "id": 18,
-    "name": "Beryl",
+    "name": "Beryl M762",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_BerylM762_C_h.png",
@@ -307,7 +307,7 @@
   },
   {
     "id": 19,
-    "name": "Mutant",
+    "name": "MK47 Mutant",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_Mk47Mutant_C_h.png",
@@ -341,7 +341,7 @@
   },
   {
     "id": 21,
-    "name": "Ace",
+    "name": "ACE32",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/Item_Weapon_ACE32_C_h.png",
