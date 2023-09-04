@@ -46,7 +46,7 @@
     "fireSelect": "Semi / Full",
     "damage": 31,
     "rof": 0.0545,
-    "velocity": 100,
+    "velocity": 380,
     "range": 100,
     "stability": 100
   },
@@ -63,7 +63,7 @@
     "fireSelect": "Semi / Full",
     "damage": 36,
     "rof": 0.086,
-    "velocity": 100,
+    "velocity": 380,
     "range": 100,
     "stability": 100
   },
@@ -80,7 +80,7 @@
     "fireSelect": "Semi / Full",
     "damage": 41,
     "rof": 0.09,
-    "velocity": 400,
+    "velocity": 360,
     "range": 200,
     "stability": 100
   },
@@ -97,7 +97,7 @@
     "fireSelect": "Semi / Full",
     "damage": 33,
     "rof": 0.067,
-    "velocity": 100,
+    "velocity": 380,
     "range": 100,
     "stability": 100
   },
@@ -114,7 +114,7 @@
     "fireSelect": "Semi / Full",
     "damage": 31,
     "rof": 0.06,
-    "velocity": 716,
+    "velocity": 400,
     "range": 100,
     "stability": 100
   },
@@ -131,7 +131,7 @@
     "fireSelect": "Semi / Full",
     "damage": 35,
     "rof": 0.06,
-    "velocity": 100,
+    "velocity": 716,
     "range": 100,
     "stability": 100
   },
