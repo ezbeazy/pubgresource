@@ -14,6 +14,7 @@ const StatsBar = ({ weaponName }) => {
   const rangeMax = 800;
   const rofMax = 3;
   const velMax = 1000;
+  const damageMax = 125;
   
   /*EQUATIONS*/
   const invertedRof = (rof, max) => 100 - ((rof/max)*100);
@@ -22,7 +23,7 @@ const StatsBar = ({ weaponName }) => {
   return (
     <div className={styles.statsContainer}>
       <h3>Stats</h3>
-      {renderStat('Damage', damage, standardEquation)}
+      {renderStat('Damage', damage, standardEquation, damageMax)}
       {renderStat('Damage Per Second', dps, standardEquation, 1000)}
       {renderStat('Rate of Fire', rof, invertedRof, rofMax)}
       {renderStat('Rounds Per Minute', rpm, standardEquation, 1500)}
