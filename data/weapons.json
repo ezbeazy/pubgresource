@@ -531,7 +531,7 @@
     "name": "Kar98K",
     "class": "Main",
     "type": "SR",
-    "image": "/img/weapons/main/Item_Weapon_Kar98k_C_h.pn",
+    "image": "/img/weapons/main/Item_Weapon_Kar98k_C_h.png",
     "link": "/weapons/main/sr#kar98k",
     "caliber": "7.62",
     "capacity": 5,
