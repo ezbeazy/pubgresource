@@ -1,0 +1,10 @@
+.mapContainer {
+    position: relative;
+    /* Add your mapContainer styling here */
+  }
+  
+  .keyImg {
+    position: absolute;
+    width: 5%;
+  }
+  
