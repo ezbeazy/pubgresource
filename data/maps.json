@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "mapName":"Erengal",
+        "mapImg": "/img/maps/Erangel_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 2,
+        "mapName":"Miramar",
+        "mapImg": "/img/maps/Miramar_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 3,
+        "mapName":"Vikendi",
+        "mapImg": "/img/maps/Vikendi_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 4,
+        "mapName":"Sanhok",
+        "mapImg": "/img/maps/Sanhok_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 5,
+        "mapName":"Karakin",
+        "mapImg": "/img/maps/Karakin_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 6,
+        "mapName":"Paramo",
+        "mapImg": "/img/maps/Paramo_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 7,
+        "mapName":"Haven",
+        "mapImg": "/img/maps/Haven_Main_High_Res.webp",
+        "secretRoomImg": ""
+    },
+    {
+        "id": 8,
+        "mapName":"Taego",
+        "mapImg":"/img/maps/Taego_Main_High_Res.webp",
+        "secretRoomImg": "/img/maps/taego-secret-rooms.webp"
+    },
+    {
+        "id": 9,
+        "mapName":"Deston",
+        "mapImg": "/img/maps/Deston_Main_High_Res.webp",
+        "secretRoomImg": ""
+    }
+]
