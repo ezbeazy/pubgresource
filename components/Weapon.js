@@ -1,5 +1,5 @@
 import styles from './Weapon.module.css';
-import weaponsData from '../data/weapons.json';
+import weaponsData from '../data/weapon.json';
 import StatsBar from '../components/StatsBar';
 
 const Weapon = ({ weaponName }) => {

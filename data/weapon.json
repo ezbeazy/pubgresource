@@ -11,9 +11,19 @@
     "ironSiteZero": "100m",
     "fireSelect": "Semi / Full",
     "damage": 40,
+    "damageCurve": [
+      {
+        "time": 80,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.85
+      }
+    ],
     "rof": 0.08,
     "velocity": 280,
-    "range": 250,
+    "range": 100,
     "stability": 100
   },
   {
@@ -28,9 +38,19 @@
     "fireSelect": "Semi / Full",
     "ironSiteZero": 100,
     "damage": 26,
+    "damageCurve": [
+      {
+        "time": 30,
+        "multiplier": 1
+      },
+      {
+        "time": 150,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 0.048,
     "velocity": 350,
-    "range": 150,
+    "range": 100,
     "stability": 100
   },
   {
@@ -45,9 +65,21 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 31,
+    "damageCurve": [
+      {
+        "time": 80,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.85
+      }
+    ],
     "rof": 0.0545,
     "velocity": 380,
     "range": 100,
+    "minRange": 40,
+    "maxRange": 150,
     "stability": 100
   },
   {
@@ -62,6 +94,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 36,
+    "damageCurve": [
+      {
+        "time": 40,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 0.086,
     "velocity": 380,
     "range": 100,
@@ -79,9 +121,19 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 41,
+    "damageCurve": [
+      {
+        "time": 60,
+        "multiplier": 1
+      },
+      {
+        "time": 300,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 0.09,
     "velocity": 360,
-    "range": 200,
+    "range": 100,
     "stability": 100
   },
   {
@@ -96,6 +148,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 33,
+    "damageCurve": [
+      {
+        "time": 40,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 0.067,
     "velocity": 380,
     "range": 100,
@@ -113,6 +175,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 31,
+    "damageCurve": [
+      {
+        "time": 40,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 0.06,
     "velocity": 400,
     "range": 100,
@@ -130,6 +202,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 35,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.85
+      }
+    ],
     "rof": 0.06,
     "velocity": 716,
     "range": 100,
@@ -147,6 +229,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 43,
+    "damageCurve": [
+      {
+        "time": 80,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -164,6 +256,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 40,
+    "damageCurve": [
+      {
+        "time": 60,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -181,6 +283,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 42,
+    "damageCurve": [
+      {
+        "time": 70,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -198,6 +310,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 41,
+    "damageCurve": [
+      {
+        "time": 60,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -215,6 +337,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 42,
+    "damageCurve": [
+      {
+        "time": 60,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -232,6 +364,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 41,
+    "damageCurve": [
+      {
+        "time": 70,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -249,6 +391,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 41,
+    "damageCurve": [
+      {
+        "time": 60,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -266,6 +418,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 39,
+    "damageCurve": [
+      {
+        "time": 90,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -283,6 +445,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 47,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 300,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -300,6 +472,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / 3rd Burst / Full",
     "damage": 44,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -317,6 +499,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / 2rd Burst",
     "damage": 49,
+    "damageCurve": [
+      {
+        "time": 80,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -334,6 +526,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 47,
+    "damageCurve": [
+      {
+        "time": 80,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -351,6 +553,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 43,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 300,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -368,6 +580,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Full",
     "damage": 41,
+    "damageCurve": [
+      {
+        "time": 75,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -385,6 +607,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Full",
     "damage": 52,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 300,
+        "multiplier": 0.75
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -402,6 +634,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Full",
     "damage": 42,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.8
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -419,6 +661,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 48,
+    "damageCurve": [
+      {
+        "time": 90,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.79
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -436,6 +688,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 48,
+    "damageCurve": [
+      {
+        "time": 90,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.79
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -453,6 +715,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 50,
+    "damageCurve": [
+      {
+        "time": 90,
+        "multiplier": 1
+      },
+      {
+        "time": 400,
+        "multiplier": 0.79
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -470,6 +742,16 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 53,
+    "damageCurve": [
+      {
+        "time": 100,
+        "multiplier": 1
+      },
+      {
+        "time": 450,
+        "multiplier": 0.80
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
@@ -477,6 +759,33 @@
   },
   {
     "id": 29,
+    "name": "SLR",
+    "class": "Main",
+    "type": "DMR",
+    "image": "/img/weapons/main/Item_Weapon_FNFAL_C_h.png",
+    "link": "/weapons/main/dmr#slr",
+    "caliber": "7.62",
+    "capacity": 10,
+    "ironSiteZero": 100,
+    "fireSelect": "Semi",
+    "damage": 56,
+    "damageCurve": [
+      {
+        "time": 110,
+        "multiplier": 1
+      },
+      {
+        "time": 475,
+        "multiplier": 0.78
+      }
+    ],
+    "rof": 0.1,
+    "velocity": 840,
+    "range": 1000,
+    "stability": 100
+  },
+  {
+    "id": 30,
     "name": "MK14",
     "class": "Main",
     "type": "DMR",
@@ -487,13 +796,23 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 61,
+    "damageCurve": [
+      {
+        "time": 1200,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.85
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "VSS",
     "class": "Main",
     "type": "DMR",
@@ -504,13 +823,23 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 43,
+    "damageCurve": [
+      {
+        "time": 50,
+        "multiplier": 1
+      },
+      {
+        "time": 200,
+        "multiplier": 0.90
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Win94",
     "class": "Main",
     "type": "SR",
@@ -521,13 +850,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 66,
+    "damageCurve": [
+      {
+        "time": 100,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.9
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Kar98K",
     "class": "Main",
     "type": "SR",
@@ -538,13 +877,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 79,
+    "damageCurve": [
+      {
+        "time": 100,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.95
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Mosin Nagant",
     "class": "Main",
     "type": "SR",
@@ -555,13 +904,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 79,
+    "damageCurve": [
+      {
+        "time": 100,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.95
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "M24",
     "class": "Main",
     "type": "DMR",
@@ -572,13 +931,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 75,
+    "damageCurve": [
+      {
+        "time": 120,
+        "multiplier": 1
+      },
+      {
+        "time": 600,
+        "multiplier": 0.95
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "AWM",
     "class": "Main",
     "type": "SR",
@@ -589,13 +958,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 105,
+    "damageCurve": [
+      {
+        "time": 150,
+        "multiplier": 1
+      },
+      {
+        "time": 700,
+        "multiplier": 0.9
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Lynx",
     "class": "Main",
     "type": "SR",
@@ -606,13 +985,23 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 118,
+    "damageCurve": [
+      {
+        "time": 150,
+        "multiplier": 1
+      },
+      {
+        "time": 700,
+        "multiplier": 0.9
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "S686",
     "class": "Main",
     "type": "SG",
@@ -623,13 +1012,35 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 26,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 0.5
+      },
+      {
+        "time": 6,
+        "multiplier": 0.85
+      },
+      {
+        "time": 50,
+        "multiplier": 0.7
+      },
+      {
+        "time": 80,
+        "multiplier": 0.5
+      },
+      {
+        "time": 81,
+        "multiplier": 0
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "S1897",
     "class": "Main",
     "type": "SG",
@@ -640,13 +1051,35 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 26,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 0.5
+      },
+      {
+        "time": 6,
+        "multiplier": 0.9
+      },
+      {
+        "time": 50,
+        "multiplier": 0.7
+      },
+      {
+        "time": 80,
+        "multiplier": 0.6
+      },
+      {
+        "time": 80.001,
+        "multiplier": 0
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "S12K",
     "class": "Main",
     "type": "SG",
@@ -657,13 +1090,35 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 24,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 0.5
+      },
+      {
+        "time": 6,
+        "multiplier": 0.8
+      },
+      {
+        "time": 40,
+        "multiplier": 0.65
+      },
+      {
+        "time": 80,
+        "multiplier": 0.4
+      },
+      {
+        "time": 81,
+        "multiplier": 0
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "DBS",
     "class": "Main",
     "type": "SG",
@@ -674,13 +1129,35 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 26,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 0.5
+      },
+      {
+        "time": 6,
+        "multiplier": 0.9
+      },
+      {
+        "time": 75,
+        "multiplier": 0.7
+      },
+      {
+        "time": 100,
+        "multiplier": 0.5
+      },
+      {
+        "time": 100.001,
+        "multiplier": 0
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "O12",
     "class": "Main",
     "type": "SG",
@@ -691,13 +1168,39 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 100,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 50,
+        "multiplier": 0.845
+      },
+      {
+        "time": 100,
+        "multiplier": 0.62075
+      },
+      {
+        "time": 150,
+        "multiplier": 0.598
+      },
+      {
+        "time": 200,
+        "multiplier": 0.585
+      },
+      {
+        "time": 300,
+        "multiplier": 0.5
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "Crossbow",
     "class": "Main",
     "type": "MISC",
@@ -708,13 +1211,23 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 105,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 1000,
+        "multiplier": 1
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Panzerfaust",
     "class": "Main",
     "type": "AP",
@@ -725,13 +1238,27 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 100,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 110,
+        "multiplier": 1
+      },
+      {
+        "time": 500,
+        "multiplier": 0.85
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 185,
     "stability": 100
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Mortar",
     "class": "Main",
     "type": "AP",
@@ -744,11 +1271,11 @@
     "damage": 100,
     "rof": 100,
     "velocity": 100,
-    "range": 100,
+    "range": 750,
     "stability": 100
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "P92",
     "class": "Sidearm",
     "type": "Pistol",
@@ -765,7 +1292,7 @@
     "stability": 100
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "P1911",
     "class": "Sidearm",
     "type": "Pistol",
@@ -782,7 +1309,7 @@
     "stability": 100
   },
   {
-    "id": 47,
+    "id": 48,
     "name": "R1895",
     "class": "Sidearm",
     "type": "Pistol",
@@ -799,7 +1326,7 @@
     "stability": 100
   },
   {
-    "id": 48,
+    "id": 49,
     "name": "P18C",
     "class": "Sidearm",
     "type": "Pistol",
@@ -816,7 +1343,7 @@
     "stability": 100
   },
   {
-    "id": 49,
+    "id": 50,
     "name": "R45",
     "class": "Sidearm",
     "type": "Pistol",
@@ -833,7 +1360,7 @@
     "stability": 100
   },
   {
-    "id": 50,
+    "id": 51,
     "name": "Deagle",
     "class": "Sidearm",
     "type": "Pistol",
@@ -844,13 +1371,31 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 62,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 30,
+        "multiplier": 1
+      },
+      {
+        "time": 44.8417053,
+        "multiplier": 0.964572966
+      },
+      {
+        "time": 150,
+        "multiplier": 0.7
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 51,
+    "id": 52,
     "name": "Skorpion",
     "class": "Sidearm",
     "type": "Machine Pistol",
@@ -861,13 +1406,27 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 22,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 30,
+        "multiplier": 1
+      },
+      {
+        "time": 150,
+        "multiplier": 0.7
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 52,
+    "id": 53,
     "name": "Sawed Off",
     "class": "Sidearm",
     "type": "Shotgun",
@@ -878,13 +1437,35 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 21,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 0
+      },
+      {
+        "time": 6,
+        "multiplier": 0.8
+      },
+      {
+        "time": 30,
+        "multiplier": 0.7
+      },
+      {
+        "time": 50,
+        "multiplier": 0.4
+      },
+      {
+        "time": 50.01,
+        "multiplier": 0
+      }
+    ],
     "rof": 100,
     "velocity": 100,
     "range": 100,
     "stability": 100
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "M79",
     "class": "Sidearm",
     "type": "Smoke Launcher",
@@ -901,7 +1482,7 @@
     "stability": 100
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Crowbar",
     "class": "Melee",
     "type": "Crowbar",
@@ -917,7 +1498,7 @@
     "stability": 100
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Machete",
     "class": "Melee",
     "type": "Machete",
@@ -933,7 +1514,7 @@
     "stability": 100
   },
   {
-    "id": 56,
+    "id": 57,
     "name": "Pan",
     "class": "Melee",
     "type": "Pan",
@@ -949,7 +1530,7 @@
     "stability": 100
   },
   {
-    "id": 57,
+    "id": 58,
     "name": "Sickle",
     "class": "Melee",
     "type": "Sickle",
@@ -965,7 +1546,7 @@
     "stability": 100
   },
   {
-    "id": 58,
+    "id": 59,
     "name": "Stun Grenade",
     "class": "Throwable",
     "type": "Grenade",
@@ -981,7 +1562,7 @@
     "stability": 100
   },
   {
-    "id": 59,
+    "id": 60,
     "name": "Frag Grenade",
     "class": "Throwable",
     "type": "Grenade",
@@ -997,7 +1578,7 @@
     "stability": 100
   },
   {
-    "id": 60,
+    "id": 61,
     "name": "Molotov Cocktail",
     "class": "Throwable",
     "type": "Incendiary",
@@ -1013,7 +1594,7 @@
     "stability": 100
   },
   {
-    "id": 61,
+    "id": 62,
     "name": "Smoke Grenade",
     "class": "Throwable",
     "type": "Grenade",
@@ -1029,7 +1610,7 @@
     "stability": 100
   },
   {
-    "id": 62,
+    "id": 63,
     "name": "BZ Grenade",
     "class": "Throwable",
     "type": "Grenade",
@@ -1045,7 +1626,7 @@
     "stability": 100
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Decoy Grenade",
     "class": "Throwable",
     "type": "Grenade",
@@ -1061,7 +1642,7 @@
     "stability": 100
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Sticky Bomb",
     "class": "Throwable",
     "type": "Explosive",
@@ -1077,7 +1658,7 @@
     "stability": 100
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "C4",
     "class": "Throwable",
     "type": "Explosive",

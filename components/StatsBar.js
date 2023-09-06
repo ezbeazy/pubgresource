@@ -1,5 +1,5 @@
 import styles from './StatsBar.module.css';
-import weaponsData from '../data/weapons.json';
+import weaponsData from '../data/weapon.json';
 
 const StatsBar = ({ weaponName }) => {
 
