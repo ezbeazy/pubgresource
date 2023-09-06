@@ -11,7 +11,7 @@ const StatsBar = ({ weaponName }) => {
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
 
-  const rangeMax = 800;
+  const rangeMax = 1000;
   const rofMax = 3;
   const velMax = 1000;
   const damageMax = 125;
