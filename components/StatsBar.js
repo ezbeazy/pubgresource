@@ -7,7 +7,7 @@ const StatsBar = ({ weaponName }) => {
 
   if (!weapon) return null;
 
-  const { damage, rof, velocity, range, stability } = weapon;
+  const { damage, rof, velocity, range } = weapon;
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
 
@@ -29,7 +29,6 @@ const StatsBar = ({ weaponName }) => {
       {renderStat('Rounds Per Minute', rpm, standardEquation, 1500)}
       {renderStat('Muzzle Velocity', velocity, standardEquation, velMax)}
       {renderStat('Range', range, standardEquation, rangeMax)}
-      {renderStat('Stability', stability, standardEquation)}
     </div>
   );
 };
