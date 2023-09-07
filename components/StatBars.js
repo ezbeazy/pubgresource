@@ -12,15 +12,9 @@ const StatBars = ({ weaponName }) => {
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
 
-  const rangeMax = 1000;
+  /*Invert ROF for StatBar fill*/
   const rofMax = 3;
-  const velMax = 1200;
-  const damageMax = 125;
-  
-  /*EQUATIONS*/
   const invertRof = rofMax - rof;
-  const invertedRof = (rof, max) => 100 - ((rof/max)*100);
-  const standardEquation = (value, max) => (value / max) * 100;
 
   return (
     <div className={styles.statsContainer}>
