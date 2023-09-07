@@ -1461,13 +1461,23 @@
     "image": "/img/weapons/handgun/Item_Weapon_M9_C_h.png",
     "link": "/weapons/sidearm#p92",
     "caliber": "9mm",
-    "capacity": 12,
+    "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1
+      },
+      {
+        "time": 100,
+        "multiplier": 1
+      }
+    ],
+    "capacity": 15,
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 34,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.1,
+    "velocity": 380,
+    "range": 1000
   },
   {
     "id": 47,
@@ -1481,9 +1491,9 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 42,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.11,
+    "velocity": 250,
+    "range": 1000
   },
   {
     "id": 48,
@@ -1497,9 +1507,9 @@
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 64,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.3,
+    "velocity": 330,
+    "range": 1000
   },
   {
     "id": 49,
@@ -1509,13 +1519,13 @@
     "image": "/img/weapons/handgun/Item_Weapon_G18_C_h.png",
     "link": "/weapons/sidearm#p18c",
     "caliber": "9mm",
-    "capacity": 15,
+    "capacity": 17,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "damage": 23,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.06,
+    "velocity": 375,
+    "range": 1000
   },
   {
     "id": 50,
@@ -1525,13 +1535,13 @@
     "image": "/img/weapons/handgun/Item_Weapon_Rhino_C_h.png",
     "link": "/weapons/sidearm#r45",
     "caliber": ".45acp",
-    "capacity": 5,
+    "capacity": 6,
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 65,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.25,
+    "velocity": 330,
+    "range": 1000
   },
   {
     "id": 51,
@@ -1541,7 +1551,7 @@
     "image": "/img/weapons/handgun/Item_Weapon_DesertEagle_C_h.png",
     "link": "/weapons/sidearm#deagle",
     "caliber": ".45acp",
-    "capacity": 6,
+    "capacity": 7,
     "ironSiteZero": 100,
     "fireSelect": "Semi",
     "damage": 62,
@@ -1563,9 +1573,9 @@
         "multiplier": 0.7
       }
     ],
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.35,
+    "velocity": 450,
+    "range": 1000
   },
   {
     "id": 52,
@@ -1593,9 +1603,9 @@
         "multiplier": 0.7
       }
     ],
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "rof": 0.070588,
+    "velocity": 350,
+    "range": 1000
   },
   {
     "id": 53,
@@ -1631,9 +1641,9 @@
         "multiplier": 0
       }
     ],
-    "rof": 100,
-    "velocity": 100,
-    "range": 80
+    "rof": 0.25,
+    "velocity": 330,
+    "range": 150
   },
   {
     "id": 54,
@@ -1662,8 +1672,8 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
+    "rof": "N/A",
+    "velocity": "N/A",
     "range": 100
   },
   {
@@ -1677,8 +1687,8 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
+    "rof": "N/A",
+    "velocity": "N/A",
     "range": 100
   },
   {
@@ -1692,8 +1702,8 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 80,
-    "rof": 100,
-    "velocity": 100,
+    "rof": "N/A",
+    "velocity": "N/A",
     "range": 100
   },
   {
@@ -1707,8 +1717,8 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
+    "rof": "N/A",
+    "velocity": "N/A",
     "range": 100
   },
   {
