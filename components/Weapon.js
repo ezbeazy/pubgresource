@@ -1,6 +1,6 @@
 import styles from './Weapon.module.css';
 import weaponsData from '../data/weapon.json';
-import StatsBar from '../components/StatsBar';
+import StatBars from '../components/StatBars';
 
 const Weapon = ({ weaponName }) => {
 
@@ -22,7 +22,7 @@ const Weapon = ({ weaponName }) => {
         <p><strong>Fire Select:</strong> {fireSelect}</p>
       </div>
     </div>
-    <StatsBar weaponName={weaponName}/>
+    <StatBars weaponName={weaponName}/>
     </div>
   );
 };

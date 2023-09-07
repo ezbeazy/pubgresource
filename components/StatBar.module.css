@@ -1,0 +1,45 @@
+.statBarWrapper {
+  margin: 10px 0px;
+}
+
+.statBarLabel {
+  font-size: .75rem;
+}
+
+.statBarContainer {
+  display: flex;
+  height: 10px;
+}
+  
+.statBar {
+  height: 10px;
+  width: 100%;;
+  background-color: #333;
+  flex: 9;
+}
+  
+.statBarFill {
+  height: 100%;
+  background-color: #007bff;
+}
+  
+.statBarValue {
+  display: flex;
+  height: 10px;
+  padding-right: 5px;
+  align-items: center;
+  justify-content: right;
+  font-size: .75em;
+  font-weight: bold;
+  color: white;
+}
+
+.statBarMax {
+  display: flex;
+  flex: 1;
+  font-size: .75em;
+  font-weight: bold;
+  align-items: center;
+  justify-content: right;
+  color: #a9a9a9;
+}
