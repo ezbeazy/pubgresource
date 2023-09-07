@@ -799,8 +799,8 @@
         "multiplier": 0.79
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.1,
+    "velocity": 990,
     "range": 1000
   },
   {
@@ -831,8 +831,8 @@
         "multiplier": 0.79
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.1,
+    "velocity": 945,
     "range": 1000
   },
   {
@@ -863,8 +863,8 @@
         "multiplier": 0.79
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.1,
+    "velocity": 900,
     "range": 1000
   },
   {
@@ -895,8 +895,8 @@
         "multiplier": 0.80
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.1,
+    "velocity": 800,
     "range": 1000
   },
   {
@@ -959,8 +959,8 @@
         "multiplier": 0.85
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.09,
+    "velocity": 853,
     "range": 1000
   },
   {
@@ -991,8 +991,8 @@
         "multiplier": 0.90
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.0856,
+    "velocity": 330,
     "range": 1000
   },
   {
