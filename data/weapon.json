@@ -703,8 +703,8 @@
         "multiplier": 0.8
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.075,
+    "velocity": 915,
     "range": 1000
   },
   {
@@ -735,8 +735,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.109,
+    "velocity": 715,
     "range": 1000
   },
   {
@@ -767,8 +767,8 @@
         "multiplier": 0.8
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.085714,
+    "velocity": 820,
     "range": 1000
   },
   {
