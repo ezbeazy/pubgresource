@@ -1433,7 +1433,7 @@
         "multiplier": 0.85
       }
     ],
-    "rof": "N/A",
+    "rof": 2,
     "velocity": 62,
     "range": 185
   },
