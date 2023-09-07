@@ -13,12 +13,22 @@
     "damage": 40,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 80,
-        "multiplier": 1
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": -0.0005999999
       },
       {
         "time": 200,
-        "multiplier": 0.85
+        "multiplier": 0.85,
+        "inTan": 0,
+        "outTan": 0
       }
     ],
     "rof": 0.08,
@@ -38,6 +48,12 @@
     "ironSiteZero": 100,
     "damage": 26,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 30,
         "multiplier": 1
@@ -65,6 +81,12 @@
     "damage": 31,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 80,
         "multiplier": 1
       },
@@ -90,6 +112,12 @@
     "fireSelect": "Semi / Full",
     "damage": 36,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 40,
         "multiplier": 1
@@ -117,6 +145,12 @@
     "damage": 41,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 60,
         "multiplier": 1
       },
@@ -142,6 +176,12 @@
     "fireSelect": "Semi / Full",
     "damage": 33,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 40,
         "multiplier": 1
@@ -169,6 +209,12 @@
     "damage": 31,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 40,
         "multiplier": 1
       },
@@ -194,6 +240,12 @@
     "fireSelect": "Semi / Full",
     "damage": 35,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 50,
         "multiplier": 1
@@ -221,6 +273,12 @@
     "damage": 43,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 80,
         "multiplier": 1
       },
@@ -229,8 +287,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.075,
+    "velocity": 900,
     "range": 1000
   },
   {
@@ -247,6 +305,12 @@
     "damage": 40,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 60,
         "multiplier": 1
       },
@@ -255,8 +319,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.0857,
+    "velocity": 880,
     "range": 1000
   },
   {
@@ -273,6 +337,12 @@
     "damage": 42,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 70,
         "multiplier": 1
       },
@@ -281,8 +351,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.096,
+    "velocity": 870,
     "range": 1000
   },
   {
@@ -299,6 +369,12 @@
     "damage": 41,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 60,
         "multiplier": 1
       },
@@ -307,8 +383,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.0857,
+    "velocity": 870,
     "range": 1000
   },
   {
@@ -325,6 +401,12 @@
     "damage": 42,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 60,
         "multiplier": 1
       },
@@ -333,8 +415,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.0923,
+    "velocity": 870,
     "range": 1000
   },
   {
@@ -351,6 +433,12 @@
     "damage": 41,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 70,
         "multiplier": 1
       },
@@ -359,8 +447,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.0857,
+    "velocity": 880,
     "range": 1000
   },
   {
@@ -377,6 +465,12 @@
     "damage": 41,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 60,
         "multiplier": 1
       },
@@ -385,8 +479,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.08,
+    "velocity": 890,
     "range": 1000
   },
   {
@@ -403,6 +497,12 @@
     "damage": 39,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 90,
         "multiplier": 1
       },
@@ -411,8 +511,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.06666,
+    "velocity": 925,
     "range": 1000
   },
   {
@@ -429,6 +529,12 @@
     "damage": 47,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 50,
         "multiplier": 1
       },
@@ -437,8 +543,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.1,
+    "velocity": 715,
     "range": 1000
   },
   {
@@ -455,6 +561,12 @@
     "damage": 44,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 50,
         "multiplier": 1
       },
@@ -463,8 +575,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.085714,
+    "velocity": 715,
     "range": 1000
   },
   {
@@ -481,6 +593,12 @@
     "damage": 49,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 80,
         "multiplier": 1
       },
@@ -489,8 +607,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.075,
+    "velocity": 780,
     "range": 1000
   },
   {
@@ -507,6 +625,12 @@
     "damage": 47,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 80,
         "multiplier": 1
       },
@@ -515,8 +639,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.08,
+    "velocity": 715,
     "range": 1000
   },
   {
@@ -533,6 +657,12 @@
     "damage": 43,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 50,
         "multiplier": 1
       },
@@ -541,8 +671,8 @@
         "multiplier": 0.75
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.088235,
+    "velocity": 720,
     "range": 1000
   },
   {
@@ -558,6 +688,12 @@
     "fireSelect": "Full",
     "damage": 41,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 75,
         "multiplier": 1
@@ -585,6 +721,12 @@
     "damage": 52,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 50,
         "multiplier": 1
       },
@@ -610,6 +752,12 @@
     "fireSelect": "Full",
     "damage": 42,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 50,
         "multiplier": 1
@@ -637,6 +785,12 @@
     "damage": 48,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 90,
         "multiplier": 1
       },
@@ -662,6 +816,12 @@
     "fireSelect": "Semi",
     "damage": 48,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 90,
         "multiplier": 1
@@ -689,6 +849,12 @@
     "damage": 50,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 90,
         "multiplier": 1
       },
@@ -714,6 +880,12 @@
     "fireSelect": "Semi",
     "damage": 53,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 100,
         "multiplier": 1
@@ -741,6 +913,12 @@
     "damage": 56,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 110,
         "multiplier": 1
       },
@@ -767,7 +945,13 @@
     "damage": 61,
     "damageCurve": [
       {
-        "time": 1200,
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
+        "time": 120,
         "multiplier": 1
       },
       {
@@ -792,6 +976,12 @@
     "fireSelect": "Semi / Full",
     "damage": 43,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 50,
         "multiplier": 1
@@ -819,6 +1009,12 @@
     "damage": 66,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 100,
         "multiplier": 1
       },
@@ -844,6 +1040,12 @@
     "fireSelect": "N/A",
     "damage": 79,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 100,
         "multiplier": 1
@@ -871,6 +1073,12 @@
     "damage": 79,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 100,
         "multiplier": 1
       },
@@ -896,6 +1104,12 @@
     "fireSelect": "N/A",
     "damage": 75,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 120,
         "multiplier": 1
@@ -923,6 +1137,12 @@
     "damage": 105,
     "damageCurve": [
       {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
+      {
         "time": 150,
         "multiplier": 1
       },
@@ -948,6 +1168,12 @@
     "fireSelect": "Semi / Full",
     "damage": 118,
     "damageCurve": [
+      {
+        "time": 0,
+        "multiplier": 1,
+        "inTan": 0,
+        "outTan": 0
+      },
       {
         "time": 150,
         "multiplier": 1
