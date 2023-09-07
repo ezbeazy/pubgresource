@@ -1221,9 +1221,9 @@
         "multiplier": 0
       }
     ],
-    "rof": 100,
-    "velocity": 100,
-    "range": 80
+    "rof": 2.41,
+    "velocity": 370,
+    "range": 150
   },
   {
     "id": 39,
@@ -1259,8 +1259,8 @@
         "multiplier": 0
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.58,
+    "velocity": 360,
     "range": 80
   },
   {
@@ -1297,8 +1297,8 @@
         "multiplier": 0
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.25,
+    "velocity": 350,
     "range": 80
   },
   {
@@ -1335,8 +1335,8 @@
         "multiplier": 0
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.125,
+    "velocity": 360,
     "range": 80
   },
   {
@@ -1377,8 +1377,8 @@
         "multiplier": 0.5
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 0.125,
+    "velocity": 625,
     "range": 1000
   },
   {
@@ -1403,8 +1403,8 @@
         "multiplier": 1
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": 2.5,
+    "velocity": 160,
     "range": 1000
   },
   {
@@ -1418,7 +1418,7 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "fireSelect": "N/A",
-    "damage": 100,
+    "damage": 250,
     "damageCurve": [
       {
         "time": 0,
@@ -1433,8 +1433,8 @@
         "multiplier": 0.85
       }
     ],
-    "rof": 100,
-    "velocity": 100,
+    "rof": "N/A",
+    "velocity": 62,
     "range": 185
   },
   {
@@ -1448,9 +1448,9 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "fireSelect": "N/A",
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "damage": 300,
+    "rof": 1,
+    "velocity": 50,
     "range": 750
   },
   {
