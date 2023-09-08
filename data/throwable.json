@@ -6,14 +6,27 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_FlashBang_C.png",
     "link": "/weapons/throwables#stun-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100,
-    "stability": 100
+    "fuse": 2.5,
+    "cook": 5,
+    "damage": 0,
+    "effectDuration": 5.5,
+    "effectDurationCurve": [
+      {
+        "distance": 0,
+        "duration": 5.5
+      },
+      {
+        "distance": 6.5,
+        "duration": 5.5
+      },
+      {
+        "distance": 20,
+        "duration": 1
+      }
+    ],
+    "radius": 20,
+    "range": 100, 
+    "space": 12
   },
   {
     "id": 2,
@@ -22,14 +35,30 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_Grenade_C.png",
     "link": "/weapons/throwables#frag-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 5,
+    "cook": 5,
+    "damage": 225,
+    "damageCurve": [
+      {
+        "distance": 0,
+        "damage": 1
+      },
+      {
+        "distance": 3.5,
+        "damage": 1
+      },
+      {
+        "distance": 8.5,
+        "damage": 0.8
+      },
+      {
+        "distance": 10,
+        "multiplier": 0.5
+      }
+    ],
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 18
   },
   {
     "id": 3,
@@ -38,30 +67,27 @@
     "type": "Incendiary",
     "image": "/img/weapons/throwable/Item_Weapon_Molotov_C.png",
     "link": "/weapons/throwables#molotov-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 0,
+    "damage": 225,
+    "effectDuration": 10,
+    "dps": 12.5,
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 16
   },
   {
     "id": 4,
     "name": "Smoke Grenade",
     "class": "Throwable",
     "type": "Grenade",
-    "image": "/img/weapons/Item_Weapon_SmokeBomb_C.png",
+    "image": "/img/weapons/throwable/Item_Weapon_SmokeBomb_C.png",
     "link": "/weapons/throwables#smoke-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 1,
+    "damage": 0,
+    "effectDuration": 5.5,
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 14
   },
   {
     "id": 5,
@@ -70,14 +96,12 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_BluezoneGrenade_C.png",
     "link": "/weapons/throwables#bz-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 2.5,
+    "damage": 150,
+    "effectDuration": 15,
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 15
   },
   {
     "id": 6,
@@ -86,14 +110,13 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_DecoyGrenade_C.png",
     "link": "/weapons/throwables#decoy-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 2.5,
+    "cook": 5,
+    "damage": 0,
+    "effectDuration": 10,
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 15
   },
   {
     "id": 7,
@@ -102,14 +125,11 @@
     "type": "Explosive",
     "image": "/img/weapons/throwable/Item_Weapon_StickyGrenade_C.png",
     "link": "/weapons/throwables#sticky-bomb",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
+    "fuse": 2.5,
     "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "radius": 10,
     "range": 100,
-    "stability": 100
+    "space": 15
   },
   {
     "id": 8,
@@ -118,13 +138,24 @@
     "type": "Explosive",
     "image": "/img/weapons/throwable/Item_Weapon_C4_C.png",
     "link": "/weapons/throwables#c4",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
+    "fuse": 16,
+    "damage": 225,
+    "damageCurve": [
+      {
+        "distance": 0,
+        "damage": 1
+      },
+      {
+        "distance": 12.5,
+        "damage": 1
+      },
+      {
+        "distance": 25,
+        "multiplier": 0.5
+      }
+    ],
+    "radius": 25,
     "range": 100,
-    "stability": 100
+    "space": 15
   }
 ]

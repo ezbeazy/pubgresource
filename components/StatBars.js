@@ -35,10 +35,6 @@ const StatBars = ({ weaponName }) => {
       <div className={styles.statsContainer}>
         <h3>Stats</h3>
         <StatBar label="Damage" value={damage} max={damageMax} />
-        <StatBar label="Damage Per Second" value={dps} max={1000} />
-        <StatBar label="Rate of Fire" value={rof} fill={invertRof} max={rofMax} />
-        <StatBar label="Rounds Per Minute" value={rpm} max={1500} />
-        <StatBar label="Muzzle Velocity" value={velocity} max={1200} />
         <StatBar label="Range" value={range} max={1000} />
       </div>
     );

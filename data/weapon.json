@@ -1657,7 +1657,7 @@
     "ironSiteZero": 100,
     "fireSelect": "N/A",
     "damage": 100,
-    "rof": 100,
+    "rof": 1.89,
     "velocity": 100,
     "range": 100
   },
@@ -1714,8 +1714,6 @@
     "image": "/img/weapons/melee/Item_Weapon_Sickle_C.png",
     "link": "/weapons/melee#sickle",
     "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
     "damage": 60,
     "rof": "N/A",
     "velocity": "N/A",
@@ -1728,13 +1726,10 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_FlashBang_C.png",
     "link": "/weapons/throwables#stun-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "damage": 0,
+    "radius": 10,
+    "range": 100, 
+    "space": 15
   },
   {
     "id": 60,
@@ -1743,13 +1738,28 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_Grenade_C.png",
     "link": "/weapons/throwables#frag-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
     "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "damageCurve": [
+      {
+        "distance": 0,
+        "damage": 1
+      },
+      {
+        "distance": 3.5,
+        "damage": 1
+      },
+      {
+        "distance": 8.5,
+        "damage": 0.8
+      },
+      {
+        "distance": 10,
+        "multiplier": 0.5
+      }
+    ],
+    "radius": 10,
+    "range": 100,
+    "space": 18
   },
   {
     "id": 61,
@@ -1758,28 +1768,25 @@
     "type": "Incendiary",
     "image": "/img/weapons/throwable/Item_Weapon_Molotov_C.png",
     "link": "/weapons/throwables#molotov-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
     "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "radius": 10,
+    "range": 100,
+    "space": 16
   },
   {
     "id": 62,
     "name": "Smoke Grenade",
     "class": "Throwable",
     "type": "Grenade",
-    "image": "/img/weapons/Item_Weapon_SmokeBomb_C.png",
+    "image": "/img/weapons/throwable/Item_Weapon_SmokeBomb_C.png",
     "link": "/weapons/throwables#smoke-grenade",
     "caliber": "N/A",
     "capacity": 1,
     "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "damage": 0,
+    "radius": 10,
+    "range": 100,
+    "space": 15
   },
   {
     "id": 63,
@@ -1788,13 +1795,11 @@
     "type": "Grenade",
     "image": "/img/weapons/throwable/Item_Weapon_BluezoneGrenade_C.png",
     "link": "/weapons/throwables#bz-grenade",
-    "caliber": "N/A",
-    "capacity": 1,
-    "ironSiteZero": 100,
-    "damage": 100,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100
+    "damage": 150,
+    "radius": 10,
+    "rof": 15,
+    "range": 100,
+    "space": 15
   },
   {
     "id": 64,
@@ -1806,10 +1811,12 @@
     "caliber": "N/A",
     "capacity": 1,
     "ironSiteZero": 100,
-    "damage": 100,
+    "damage": 0,
+    "radius": 10,
     "rof": 100,
     "velocity": 100,
-    "range": 100
+    "range": 100,
+    "space": 15
   },
   {
     "id": 65,
@@ -1822,9 +1829,11 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 100,
+    "radius": 10,
     "rof": 100,
     "velocity": 100,
-    "range": 100
+    "range": 100,
+    "space": 15
   },
   {
     "id": 66,
@@ -1837,8 +1846,10 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 100,
+    "radius": 25,
     "rof": 100,
     "velocity": 100,
-    "range": 100
+    "range": 100,
+    "space": 15
   }
 ]
