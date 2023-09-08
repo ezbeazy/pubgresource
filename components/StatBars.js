@@ -12,15 +12,23 @@ const StatBars = ({ weaponName }) => {
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
 
-  /*Invert ROF for StatBar fill*/
-  const rofMax = 3;
-  const invertRof = rofMax - rof;
+  let rofMax;
+  let damageMax;
 
-  let damageMax = 125;
+  if(type == "AP" || type == "MISC" || type == "SG"){
+    rofMax = 3;
+  } else {
+    rofMax = 2;
+  }
 
   if(type == "AP") {
     damageMax = 300;
+  } else {
+    damageMax = 125;
   };
+
+  /*Invert ROF for StatBar fill*/
+  const invertRof = rofMax - rof;
 
   if ( className == "Melee" ) {
     return (
@@ -28,7 +36,7 @@ const StatBars = ({ weaponName }) => {
         <h3>Stats</h3>
         <StatBar label="Damage" value={damage} max={damageMax} />
         <StatBar label="Damage Per Second" value={dps} max={1000} />
-        <StatBar label="Rate of Fire" value={rof} fill={invertRof} max={3} />
+        <StatBar label="Rate of Fire" value={rof} fill={invertRof} max={rofMax} />
         <StatBar label="Rounds Per Minute" value={rpm} max={1500} />
         <StatBar label="Muzzle Velocity" value={velocity} max={1200} />
         <StatBar label="Range" value={range} max={1000} />
