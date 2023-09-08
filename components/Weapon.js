@@ -1,13 +1,13 @@
 import styles from './Weapon.module.css';
-import weaponsData from '../data/weapon.json';
+import weaponData from '../data/weapon.json';
 import StatBars from '../components/StatBars';
 
 const Weapon = ({ weaponName }) => {
 
-  const weapon = weaponsData.find(w => w.name === weaponName);
+  const weapon = weaponData.find(w => w.name === weaponName);
   if (!weapon) return null;
 
-  const { image, caliber, capacity, ironSiteZero, fireSelect } = weapon;
+  const { class: className, image, caliber, capacity, ironSiteZero, fireSelect } = weapon;
 
   return (
     <div>
@@ -16,6 +16,7 @@ const Weapon = ({ weaponName }) => {
         <img src={image} alt="Weapon" className={styles.weaponImage} />
       </div>
       <div className={styles.infoContainer}>
+        <p><strong>Class:</strong> {className}</p>
         <p><strong>Caliber:</strong> {caliber}</p>
         <p><strong>Capacity:</strong> {capacity}</p>
         <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>

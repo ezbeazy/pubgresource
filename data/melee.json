@@ -10,10 +10,9 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100,
-    "stability": 100
+    "rof": "N/A",
+    "velocity": "N/A",
+    "range": 100
   },
   {
     "id": 2,
@@ -26,10 +25,9 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100,
-    "stability": 100
+    "rof": "N/A",
+    "velocity": "N/A",
+    "range": 100
   },
   {
     "id": 3,
@@ -42,10 +40,9 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 80,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100,
-    "stability": 100
+    "rof": "N/A",
+    "velocity": "N/A",
+    "range": 100
   },
   {
     "id": 4,
@@ -58,9 +55,8 @@
     "capacity": 1,
     "ironSiteZero": 100,
     "damage": 60,
-    "rof": 100,
-    "velocity": 100,
-    "range": 100,
-    "stability": 100
+    "rof": "N/A",
+    "velocity": "N/A",
+    "range": 100
   }
 ]
