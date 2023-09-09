@@ -1,7 +1,7 @@
 import styles from './Vehicle.module.css';
 import vehicleData from '../data/vehicle.json';
 import StatBars from '../components/StatBars';
-import StatBar from './statBar';
+import StatBar from '../components/statBar';
 
 const Vehicle = ({ vehicleName }) => {
 
