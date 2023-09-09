@@ -1,6 +1,6 @@
 import styles from './Vehicle.module.css';
 import vehicleData from '../data/vehicle.json';
-import StatBar from './statBar';
+import StatBar from './StatBar';
 
 const Vehicle = ({ vehicleName }) => {
 

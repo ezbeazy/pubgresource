@@ -1,6 +1,6 @@
 import styles from './StatBars.module.css';
 import weaponData from '../data/weapon.json';
-import StatBar from './statBar';
+import StatBar from './StatBar';
 
 const StatBars = ({ weaponName }) => {
 
