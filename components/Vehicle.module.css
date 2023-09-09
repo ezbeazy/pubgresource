@@ -1,0 +1,20 @@
+.vehicleContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.imageContainer {
+  width: 70%;
+}
+
+.vehicleImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.infoContainer {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
