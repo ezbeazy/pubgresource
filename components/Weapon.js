@@ -1,13 +1,15 @@
 import styles from './Weapon.module.css';
-import weaponData from '../data/weapon.json';
+import weaponData from '../data/weaponData';
 import StatBar from './StatBar';
 
 const Weapon = ({ weaponName }) => {
 
+
+
   const weapon = weaponData.find(w => w.name === weaponName);
   if (!weapon) return null;
-
-  const { class: className, type, damage, rof, velocity, range, image, caliber, capacity, ironSiteZero, fireSelect } = weapon;
+  
+  const { class: weaponClass, type, image, link, caliber, capacity, ironSiteZero, fireSelect, damage, rof, velocity, range, fuse, cook, effectDuration, radius, space} = weapon;
 
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
@@ -31,16 +33,16 @@ const Weapon = ({ weaponName }) => {
   const invertRof = rofMax - rof;
   
   const statBars = () => {
-    if ( className == "Melee" ) {
+    if ( weaponClass == "Melee" ) {
       return (
-        <div className={styles.statsContainer}>
+        <div weaponClass={styles.statsContainer}>
           <StatBar label="Damage" value={damage} max={damageMax} />
           <StatBar label="Range" value={range} max={1000} />
         </div>
       );
-    } else if ( className == "Throwable" ) {
+    } else if ( weaponClass == "Throwable" ) {
       return (
-        <div className={styles.statsContainer}>
+        <div weaponClasse={styles.statsContainer}>
           <StatBar label="Damage" value={damage} max={damageMax} />
           <StatBar label="Damage Per Second" value={dps} max={1000} />
           <StatBar label="Effective Radius" value={rof} fill={invertRof} max={3} />
@@ -49,7 +51,7 @@ const Weapon = ({ weaponName }) => {
       );
     } else {
       return (
-        <div className={styles.statsContainer}>
+        <div weaponClass={styles.statsContainer}>
           <StatBar label="Damage" value={damage} max={damageMax} />
           <StatBar label="Damage Per Second" value={dps} max={1000} />
           <StatBar label="Rate of Fire" value={rof} fill={invertRof} max={3} />
@@ -68,7 +70,7 @@ const Weapon = ({ weaponName }) => {
         <img src={image} alt="Weapon" className={styles.weaponImage} />
       </div>
       <div className={styles.infoContainer}>
-        <p><strong>Class:</strong> {className}</p>
+        <p><strong>Class:</strong> {weaponClass}</p>
         <p><strong>Caliber:</strong> {caliber}</p>
         <p><strong>Capacity:</strong> {capacity}</p>
         <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
