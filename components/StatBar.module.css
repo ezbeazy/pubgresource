@@ -26,9 +26,9 @@
 .statBarValue {
   display: flex;
   height: 10px;
-  padding-right: 5px;
+  padding-left: 2px;
   align-items: center;
-  justify-content: right;
+  justify-content: left;
   font-size: .75em;
   font-weight: bold;
   color: white;

@@ -1,42 +1,39 @@
 import Weapon from '../../components/Weapon';
 import Throwable from '../../components/Throwable';
 
+## Overview 
+
+- When throwing items, player velocity affects throw velocity but does not seem to affect range.
+- Throwables can be holstered by switching weapon if pin not pulled
+- Enemy players can hear when grenade pins are pulled
+- Cookable grenades have a cook time of 5 seconds, negating fuse time
+
 ## Stun Grenade
 
 <Throwable throwableName="Stun Grenade"/>
-
-### Description
 
 A Stun Grenade, also known as a flash grenade or flashbang, is a grenade with several chemical and metallurgic properties that result in a loud pop and blinding flash of light when detonated. This grenade is meant to cause temporary, not permanent damage, and is great for non-mortal wounding, though it is often used as a precursor to armed conflict to clear rooms and buildings.
 
 The Stun Grenade will cause strong disorientation to everyone within the blast radius (~5m) in the form of a loud ringing and a strong reduction in framerate. If detonated within a player's cone of vision (based off the FPS camera), the player will be completely blinded by white light for several seconds. (Exact timing stat needed)
 
-Prime: 5s
-Fuse: 2.5s (uncooked)  
-*.7s after first surface contact
+*Detonates .7s after first surface contact  
+
+**Map Availability**: All Maps  
 
 ## Frag Grenade
 
 <Throwable throwableName="Frag Grenade"/>
 
-### Description 
-
 Fragmentation Grenade contains an explosive charge to fragment the outer shell dispersing shrapnel in a radial pattern. Frag grenades can be used to inflict damage to enemies behind cover, within buildings or to deal damage to groups of enemies grouped closely together and vehicles. Fragmentation does not penetrate solid cover such as rocks or walls.  
 
-- Can be thrown on the run
-- Throw velocity accounts for character velocity
-- Can be holstered by switching weapon if pin not pulled
 - Damage reduced by vests but does not damage vests
 - 20% less damage to prone players
-- Enemy players can hear pin pull 
 
-Fuse: 5s
+**Map Availability**: All Maps  
 
 ## Molotov Cocktail
 
 <Throwable throwableName="Molotov Cocktail"/>
-
-### Description
 
 Molotov Cocktails create an area of fire on the ground around where they impact. Players hit by or passing through this area will be set aflame, doing constant damage over time. Molotov Cocktails can be used offensively, but don't bounce like other throwable weapons. Another potential use of a molotov cocktail is area denial. If you set the staircase on fire, players will not be able to pursue you up to higher floors, and you can use this extra time to set up a kill zone or escape off a balcony. Molotov cocktails can also be used defensively to obscure an enemy's line of sight, similar to a Smoke Grenade.  
 
@@ -47,11 +44,11 @@ Molotov Cocktails create an area of fire on the ground around where they impact.
 - Multiple Molotovs increase flame radius
 - Flame radius spreads farther on wood surfaces
 
+**Map Availability**: All Maps  
+
 ## Smoke Grenade
 
 <Throwable throwableName="Smoke Grenade"/>
-
-### Description
 
 Smoke grenades are a throwable device packed with a mixture of potassium chlorate, lactose, and typically a dye for signalling. The chemicals mix with air to create a smoke screen that temporarily removes battlefield awareness.
 
@@ -59,25 +56,23 @@ Smoke grenades are a throwable device packed with a mixture of potassium chlorat
 - Smoke fadeout begins when sound stops, so player can start being visible from five seconds while inside smoke.
 - Smoke Grenades are spawned at a higher rate compared to other throwables.
 
-fuse: 1s  
+**Map Availability**: All Maps  
 
 ## BZ Grenade
 
 <Throwable throwableName="BZ Grenade"/>
 
-### Description 
-
 The blue zone grenade releases a mini, 360 degree blue zone. This grenade will not detonate in water but the blue zone will expand into water and through walls. Intersecting blue zones from multiple grenades will stack damage.  
 
-Expand Time: 5s  
-Expanded Time: 5s  
-Shrink Time: 5s  
+- Expand Time: 5s  
+- Expanded Time: 5s  
+- Shrink Time: 5s  
+
+**Map Availability**: All Maps  
 
 ## Decoy Grenade
 
 <Throwable throwableName="Decoy Grenade"/>
-
-### Description
 
 Disorient your enemies and cover your movements with the new Decoy Grenade. Available as world loot on Sanhok, the Decoy Grenade will make fake firing sounds for about 10 seconds after thrown, giving you a few moments to make your move.
 
@@ -85,27 +80,21 @@ The Decoy Grenade is a new throwable which mimics gunshot sounds. Purposely made
 
 - Will not detonate under water
 
-### Map Availability
-- Sanhok, Karakin
+**Map Availability**: Sanhok, Karakin  
 *Not available in ranked
 
 ## Sticky Bomb
 
 <Throwable throwableName="Sticky Bomb"/>
 
-### Description
-
 A brick of Composition-4 plastic explosive composed of four M112 demolition blocks wired to a detonator.
 
-### Map Availability
-
-- Karakin
+**Map Availability**: Karakin  
+*Not available in ranked
 
 ## C4
 
 <Throwable throwableName="C4"/>
-
-### Description
 
 C4 is an interesting and powerful new tool that gives players new ways to strategically flush out timid opponents. With a massive 25 meter effective radius and damage that can penetrate cover, you’ll be wanting to run away when you hear this beeping brick of boom. A quick note about C4, we don’t intend this to be just another throwable. It has a pretty short range, but can be used to cut off enemy entry into a building or new zone, or as mentioned above can force enemies out of their safe positions.
 
@@ -119,8 +108,5 @@ Detonation cannot be stopped or activated early
 - Cover does not protect from damage
 - Short throw distance
 
-### Map Availability
-
-- Erangel, Miramar, Vikendi, Sanhok
-
+**Map Availability**: Erangel, Miramar, Vikendi, Sanhok  
 *Not available in ranked

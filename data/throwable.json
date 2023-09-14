@@ -7,8 +7,9 @@
     "image": "/img/weapons/throwable/Item_Weapon_FlashBang_C.png",
     "link": "/weapons/throwables#stun-grenade",
     "fuse": 2.5,
-    "cook": 5,
+    "cook": "Yes",
     "damage": 0,
+    "dps": 0,
     "effectDuration": 5.5,
     "effectDurationCurve": [
       {
@@ -25,7 +26,6 @@
       }
     ],
     "radius": 20,
-    "dps": 0,
     "range": 100, 
     "space": 12
   },
@@ -37,8 +37,9 @@
     "image": "/img/weapons/throwable/Item_Weapon_Grenade_C.png",
     "link": "/weapons/throwables#frag-grenade",
     "fuse": 5,
-    "cook": 5,
+    "cook": "Yes",
     "damage": 225,
+    "dps": 225,
     "damageCurve": [
       {
         "distance": 0,
@@ -57,8 +58,8 @@
         "multiplier": 0.5
       }
     ],
+    "effectDuration": 0,
     "radius": 10,
-    "dps": 225,
     "range": 100,
     "space": 18
   },
@@ -70,9 +71,10 @@
     "image": "/img/weapons/throwable/Item_Weapon_Molotov_C.png",
     "link": "/weapons/throwables#molotov-grenade",
     "fuse": 0,
+    "cook": "No",
     "damage": 225,
-    "effectDuration": 10,
     "dps": 12.5,
+    "effectDuration": 10,
     "radius": 10,
     "range": 100,
     "space": 16
@@ -85,7 +87,9 @@
     "image": "/img/weapons/throwable/Item_Weapon_SmokeBomb_C.png",
     "link": "/weapons/throwables#smoke-grenade",
     "fuse": 1,
+    "cook": "No",
     "damage": 0,
+    "dps": 0,
     "effectDuration": 5.5,
     "radius": 10,
     "range": 100,
@@ -99,9 +103,10 @@
     "image": "/img/weapons/throwable/Item_Weapon_BluezoneGrenade_C.png",
     "link": "/weapons/throwables#bz-grenade",
     "fuse": 2.5,
+    "cook": "No",
     "damage": 150,
-    "effectDuration": 15,
     "dps": 10,
+    "effectDuration": 15,
     "radius": 10,
     "range": 100,
     "space": 15
@@ -114,8 +119,9 @@
     "image": "/img/weapons/throwable/Item_Weapon_DecoyGrenade_C.png",
     "link": "/weapons/throwables#decoy-grenade",
     "fuse": 2.5,
-    "cook": 5,
+    "cook": "Yes",
     "damage": 0,
+    "dps": 0,
     "effectDuration": 10,
     "radius": 10,
     "range": 100,
@@ -129,10 +135,12 @@
     "image": "/img/weapons/throwable/Item_Weapon_StickyGrenade_C.png",
     "link": "/weapons/throwables#sticky-bomb",
     "fuse": 2.5,
+    "cook": "No",
     "damage": 100,
     "dps": 100,
+    "effectDuration": 0,
     "radius": 10,
-    "range": 100,
+    "range": 20,
     "space": 15
   },
   {
@@ -143,7 +151,9 @@
     "image": "/img/weapons/throwable/Item_Weapon_C4_C.png",
     "link": "/weapons/throwables#c4",
     "fuse": 16,
+    "cook": "No",
     "damage": 225,
+    "dps": 225,
     "damageCurve": [
       {
         "distance": 0,
@@ -158,9 +168,9 @@
         "multiplier": 0.5
       }
     ],
+    "effectDuration": 0,
     "radius": 25,
-    "dps": 225,
-    "range": 100,
+    "range": 15,
     "space": 15
   }
 ]

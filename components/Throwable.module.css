@@ -1,0 +1,43 @@
+.weaponContainer {
+  display: flex;
+  flex-direction: row;  /* default to row layout */
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.aside {
+  width: 30%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.imageContainer {
+  width: 70%;
+}
+
+.weaponImage {
+  max-width: 50%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.infoContainer .label {
+  font-weight: bold;
+}
+
+.infoContainer p {
+  font-size: .85rem;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .weaponContainer {
+    flex-direction: column; /* switch to column layout */
+    align-items: center;
+  }
+
+  .imageContainer,
+  .aside {
+    width: 100%; /* full width on mobile */
+  }
+}
