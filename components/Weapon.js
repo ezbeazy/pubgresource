@@ -2,98 +2,35 @@ import styles from './Weapon.module.css';
 import weaponData from '../data/weaponData';
 import StatBar from './StatBar';
 
-const Weapon = ({ weaponName }) => {
+const Weapon = ({ name }) => {
+  const weapon = weaponData.find(w => w.name === name);
 
-
-
-  const weapon = weaponData.find(w => w.name === weaponName);
-  if (!weapon) return null;
+  if (!weapon) {
+    return <div>Error: Weapon not found</div>;
+  }
   
-  const { class: weaponClass, type, image, link, caliber, capacity, ironSiteZero, fireSelect, damage, rof, velocity, range, fuse, cook, effectDuration, radius, space} = weapon;
+  const { class: weaponClass, type, image, link, caliber, capacity, ironSiteZero, fireSelect, damage, rof, velocity, range} = weapon;
 
   const dps = Math.round((1 / rof) * damage);
   const rpm = Math.round((1 / rof) * 60);
 
-  let rofMax;
-  let damageMax;
+  let MAX_ROF;
+  let MAX_DAMAGE;
 
   if(type == "AP" || type == "MISC" || type == "SG"){
-    rofMax = 3;
+    MAX_ROF = 3;
   } else {
-    rofMax = 2;
+    MAX_ROF = 2;
   }
 
-  if (weaponClass == "Main" ||  weaponClass == "Sidearm" ) {
-    if(type == "AP") {
-      damageMax = 300;
-    } else {
-      damageMax = 125;
-    };
-  } else if (weaponClass == "Throwable") {
-    damageMax = 400;
-  }
-
+  if(type == "AP") {
+    MAX_DAMAGE = 300;
+  } else {
+    MAX_DAMAGE = 125;
+  };
+ 
   /*Invert ROF for StatBar fill*/
-  const invertRof = rofMax - rof;
-
-  const weaponInfo = () => {
-    if (weaponClass == "Melee") { 
-      return (
-      <div className={styles.infoContainer}>
-        <p><strong>Class:</strong> {weaponClass}</p>
-        <p><strong>Type:</strong> {type}</p>
-      </div>
-      )
-    } else if (weaponClass == "Throwable") {
-      return (
-      <div className={styles.infoContainer}>
-        <p><strong>Class:</strong> {weaponClass}</p>
-        <p><strong>Type:</strong> {type}</p>
-      </div>
-      )
-    } else {
-      return (
-      <div className={styles.infoContainer}>
-        <p><strong>Class:</strong> {weaponClass}</p>
-        <p><strong>Caliber:</strong> {caliber}</p>
-        <p><strong>Capacity:</strong> {capacity}</p>
-        <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
-        <p><strong>Fire Select:</strong> {fireSelect}</p>
-      </div>
-      )
-    }
-  }
-  
-  const statBars = () => {
-    if ( weaponClass == "Melee" ) {
-      return (
-        <div weaponClass={styles.statsContainer}>
-          <StatBar label="Damage" value={damage} max={damageMax} />
-          <StatBar label="Range" value={range} max={1000} />
-        </div>
-      );
-    } else if ( weaponClass == "Throwable" ) {
-      return (
-        <div weaponClasse={styles.statsContainer}>
-          <StatBar label="Damage" value={damage} max={damageMax} />
-          <StatBar label="Damage Per Second" value={dps} max={1000} />
-          <StatBar label="Effective Radius" value={rof} fill={invertRof} max={3} />
-          <StatBar label="Range" value={range} max={1000} />
-        </div>
-      );
-    } else {
-      return (
-        <div weaponClass={styles.statsContainer}>
-          <StatBar label="Damage" value={damage} max={damageMax} />
-          <StatBar label="Damage Per Second" value={dps} max={1000} />
-          <StatBar label="Rate of Fire" value={rof} fill={invertRof} max={3} />
-          <StatBar label="Rounds Per Minute" value={rpm} max={1500} />
-          <StatBar label="Muzzle Velocity" value={velocity} max={1200} />
-          <StatBar label="Range" value={range} max={1000} />
-        </div>
-      );
-    };
-  }
+  const invertRof = MAX_ROF - rof;
 
   return (
     <div>
@@ -101,10 +38,23 @@ const Weapon = ({ weaponName }) => {
       <div className={styles.imageContainer}>
         <img src={image} alt="Weapon" className={styles.weaponImage} />
       </div>
-      {weaponInfo()}
+      <aside className={styles.aside}>
+      <div className={styles.infoContainer}>
+        <p><strong>Caliber:</strong> {caliber}</p>
+        <p><strong>Capacity:</strong> {capacity}</p>
+        <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
+        <p><strong>Fire Select:</strong> {fireSelect}</p>
+      </div>
+      </aside>
     </div>
-    <h3>Stats</h3>
-      {statBars()}
+    <div weaponClass={styles.statsContainer}>
+      <StatBar label="Damage" value={damage} max={MAX_DAMAGE} />
+      <StatBar label="Damage Per Second" value={dps} max={1000} />
+      <StatBar label="Rate of Fire" value={MAX_ROF} fill={invertRof} max={3} />
+      <StatBar label="Rounds Per Minute" value={rpm} max={1500} />
+      <StatBar label="Muzzle Velocity" value={velocity} max={1200} />
+      <StatBar label="Range" value={range} max={1000} />
+    </div>
     </div>
   );
 };
