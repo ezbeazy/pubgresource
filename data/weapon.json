@@ -1660,5 +1660,23 @@
     "rof": 1.89,
     "velocity": 100,
     "range": 100
+  },
+  {
+    "id": 55,
+    "name": "Dragonov",
+    "class": "Main",
+    "type": "AR",
+    "image": "/img/weapons/main/img-weapons-dragunov.webp",
+    "link": "/weapons/main/dmr#dragonov",
+    "caliber": "40mm",
+    "capacity": 10,
+    "ironSiteZero": 100,
+    "fireSelect": "N/A",
+    "damage": 60,
+    "rof": 1.89,
+    "tbs": 1.89,
+    "velocity": 830,
+    "range": 1000,
+    "effectiveRange": 500
   }
 ]
