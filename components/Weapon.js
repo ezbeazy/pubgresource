@@ -23,14 +23,46 @@ const Weapon = ({ weaponName }) => {
     rofMax = 2;
   }
 
-  if(type == "AP") {
-    damageMax = 300;
-  } else {
-    damageMax = 125;
-  };
+  if (weaponClass == "Main" ||  weaponClass == "Sidearm" ) {
+    if(type == "AP") {
+      damageMax = 300;
+    } else {
+      damageMax = 125;
+    };
+  } else if (weaponClass == "Throwable") {
+    damageMax = 400;
+  }
 
   /*Invert ROF for StatBar fill*/
   const invertRof = rofMax - rof;
+
+  const weaponInfo = () => {
+    if (weaponClass == "Melee") { 
+      return (
+      <div className={styles.infoContainer}>
+        <p><strong>Class:</strong> {weaponClass}</p>
+        <p><strong>Type:</strong> {type}</p>
+      </div>
+      )
+    } else if (weaponClass == "Throwable") {
+      return (
+      <div className={styles.infoContainer}>
+        <p><strong>Class:</strong> {weaponClass}</p>
+        <p><strong>Type:</strong> {type}</p>
+      </div>
+      )
+    } else {
+      return (
+      <div className={styles.infoContainer}>
+        <p><strong>Class:</strong> {weaponClass}</p>
+        <p><strong>Caliber:</strong> {caliber}</p>
+        <p><strong>Capacity:</strong> {capacity}</p>
+        <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
+        <p><strong>Fire Select:</strong> {fireSelect}</p>
+      </div>
+      )
+    }
+  }
   
   const statBars = () => {
     if ( weaponClass == "Melee" ) {
@@ -69,16 +101,10 @@ const Weapon = ({ weaponName }) => {
       <div className={styles.imageContainer}>
         <img src={image} alt="Weapon" className={styles.weaponImage} />
       </div>
-      <div className={styles.infoContainer}>
-        <p><strong>Class:</strong> {weaponClass}</p>
-        <p><strong>Caliber:</strong> {caliber}</p>
-        <p><strong>Capacity:</strong> {capacity}</p>
-        <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
-        <p><strong>Fire Select:</strong> {fireSelect}</p>
-      </div>
+      {weaponInfo()}
     </div>
     <h3>Stats</h3>
-    {statBars()}
+      {statBars()}
     </div>
   );
 };
