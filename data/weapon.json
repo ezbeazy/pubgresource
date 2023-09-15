@@ -269,7 +269,7 @@
     "caliber": "5.56",
     "capacity": 30,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / Full",
+    "fireSelect": "Semi / Burst",
     "damage": 43,
     "damageCurve": [
       {
@@ -493,7 +493,7 @@
     "caliber": "5.56",
     "capacity": 30,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / Full",
+    "fireSelect": "Semi / Burst / Full",
     "damage": 39,
     "damageCurve": [
       {
@@ -512,8 +512,11 @@
       }
     ],
     "rof": 0.06666,
+    "rpm": 900,
     "velocity": 925,
-    "range": 1000
+    "range": 1000,
+    "reloadTime": 3.3,
+    "tacReload": 2.7
   },
   {
     "id": 17,
@@ -1674,7 +1677,7 @@
   },
   {
     "id": 55,
-    "name": "Dragonov",
+    "name": "Dragunov",
     "class": "Main",
     "type": "AR",
     "image": "/img/weapons/main/img-weapons-dragunov.webp",
