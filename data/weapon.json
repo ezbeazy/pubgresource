@@ -752,7 +752,7 @@
     "caliber": "7.62",
     "capacity": 50,
     "ironSiteZero": 100,
-    "fireSelect": "Full",
+    "fireSelect": "Full / Full High",
     "damage": 42,
     "damageCurve": [
       {
