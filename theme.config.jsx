@@ -23,6 +23,7 @@ export default {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="PUBG Resource" />
         <meta property="og:description" content="Gaming resources for PUBG players" />
+        <link rel="icon" href="/img/favicon.png" />
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1013496822643101"
      crossOrigin="anonymous"></script>
