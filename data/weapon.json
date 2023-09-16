@@ -238,6 +238,7 @@
     "capacity": 15,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
+    "crateWeapon": true,
     "damage": 35,
     "damageCurve": [
       {
@@ -494,6 +495,7 @@
     "capacity": 30,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Burst / Full",
+    "crateWeapon": true,
     "damage": 39,
     "damageCurve": [
       {
@@ -625,6 +627,7 @@
     "capacity": 30,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
+    "crateWeapon": true,
     "damage": 47,
     "damageCurve": [
       {
@@ -749,6 +752,7 @@
     "type": "LMG",
     "image": "/img/weapons/main/Item_Weapon_MG3_C_h.png",
     "link": "/weapons/main/lmg#mg3",
+    "crateWeapon": true,
     "caliber": "7.62",
     "capacity": 50,
     "ironSiteZero": 100,
@@ -945,6 +949,7 @@
     "capacity": 12,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
+    "crateWeapon": true,
     "damage": 61,
     "damageCurve": [
       {
@@ -1137,6 +1142,7 @@
     "capacity": 5,
     "ironSiteZero": 100,
     "fireSelect": "N/A",
+    "crateWeapon": true,
     "damage": 105,
     "damageCurve": [
       {
@@ -1169,6 +1175,7 @@
     "capacity": 5,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
+    "crateWeapon": true,
     "damage": 118,
     "damageCurve": [
       {

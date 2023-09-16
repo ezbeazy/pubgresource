@@ -1,43 +1,56 @@
 .weaponContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0px;
-  }
-  
-  .imageContainer {
-    width: 70%;
-  }
+  margin: 50px 0px;
+  position: relative;
+}
 
-  .aside {
-    width: 30%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .weaponImage {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .infoContainer .label {
-    font-weight: bold;
-  }
-  
-  .infoContainer p {
-    font-size: .85rem;
-  }
+.crate {
+  position: absolute;
+  right: 15px;
+  top: -25px;
+}
 
-  /* Mobile view */
+.crate img {
+  width: 25px;
+  height: 25px;
+}
+
+.weaponProfile {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.weaponImage {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+}
+    
+.infoContainer .label {
+  font-weight: bold;
+}
+
+.infoContainer p {
+  font-size: .85rem;
+}
+
+/* Mobile view */
 @media screen and (max-width: 768px) {
-  .weaponContainer {
+  .weaponProfile {
     flex-direction: column; /* switch to column layout */
     align-items: center;
   }
-
   .imageContainer {
     width: 100%;
   }
-  .aside {
+  .infoContainer {
     width: 100%;
     padding: 20px 0px;
   }
