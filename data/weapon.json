@@ -1359,7 +1359,7 @@
     "caliber": "12ga slug",
     "capacity": 25,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / Full",
+    "fireSelect": "Semi / Burst / Full",
     "damage": 100,
     "damageCurve": [
       {
