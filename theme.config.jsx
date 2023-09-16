@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
+
 export default {
-    logo: <span>PUBG Resource</span>,
+    logo: <span className='logo'>PUBG Resource</span>,
     project: {
       link: 'https://github.com/shuding/nextra'
     },
