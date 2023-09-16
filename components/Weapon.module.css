@@ -47,6 +47,9 @@
     flex-direction: column; /* switch to column layout */
     align-items: center;
   }
+  .weaponImage {
+    width: 100%;
+  }
   .imageContainer {
     width: 100%;
   }
