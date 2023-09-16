@@ -1172,7 +1172,7 @@
     "image": "/img/weapons/main/Item_Weapon_L6_C_h.png",
     "link": "/weapons/main/sr#lynx",
     "caliber": ".50",
-    "capacity": 5,
+    "capacity": 10,
     "ironSiteZero": 100,
     "fireSelect": "Semi / Full",
     "crateWeapon": true,
