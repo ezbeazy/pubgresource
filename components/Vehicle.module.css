@@ -1,20 +1,46 @@
-.vehicleContainer {
+.container {
+  margin: 25px 0px;
+}
+
+.profile {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0px;
 }
 
-.imageContainer {
+.image {
   width: 70%;
+  padding: 20px;
 }
 
-.vehicleImage {
+.image img {
   max-width: 100%;
   height: auto;
 }
 
-.infoContainer {
+.info {
   width: 30%;
   padding: 20px;
-  box-sizing: border-box;
+}
+
+.info .label {
+  font-weight: bold;
+}
+
+.info p {
+  font-size: .85rem;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column; /* switch to column layout */
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    padding: 20px 0px;
+  }
 }

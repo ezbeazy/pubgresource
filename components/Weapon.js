@@ -44,21 +44,21 @@ const Weapon = ({ name }) => {
 
   return (
     <>
-    <div className={styles.weaponContainer}>
+    <div className={styles.container}>
     {crate()}
-      <div className={styles.weaponProfile}>
-        <div className={styles.weaponImage}>
-          <img src={image} alt="Weapon"/>
+      <div className={styles.profile}>
+        <div className={styles.image}>
+          <img src={image} alt={name}/>
         </div>
-        <aside className={styles.infoContainer}>
+        <aside className={styles.info}>
           <p><strong>Caliber:</strong> {caliber}</p>
           <p><strong>Capacity:</strong> {capacity}</p>
           <p><strong>Iron Site Zero:</strong> {ironSiteZero}</p>
           <p><strong>Fire Select:</strong> {fireSelect}</p>
         </aside>
-        </div>
       </div>
-      <div weaponClass={styles.statsContainer}>
+    </div>
+      <div weaponClass={styles.stats}>
         <StatBar label="Damage" value={damage} max={MAX_DAMAGE} />
         <StatBar label="Damage Per Second" value={dps} max={1000} />
         <StatBar label="Rate of Fire" value={MAX_ROF} fill={invertRof} max={3} />
