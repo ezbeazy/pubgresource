@@ -20,10 +20,6 @@
   height: auto;
 }
 
-.info {
-  padding: 20px;
-}
-
 .info .label {
   font-weight: bold;
 }
@@ -45,7 +41,7 @@
   }
 
   .info {
-    padding: 20px 0px;
+    padding-top: 20px;
   }
 
 }
