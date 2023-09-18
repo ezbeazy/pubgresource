@@ -2,12 +2,14 @@ import styles from './Vehicle.module.css';
 import vehicleData from '../data/vehicle.json';
 import StatBar from './StatBar';
 
-const Vehicle = ({ vehicleName }) => {
+const Vehicle = ({ name }) => {
 
-  const vehicle = vehicleData.find(w => w.name === vehicleName);
-  if (!vehicle) return null;
+  const vehicle = vehicleData.find(w => w.name === name);
+  if (!vehicle) {
+    return <div>Error: Vehicle not found</div>;
+  };
 
-  const { name, type, img, seats, shooters, trunk, amphibious, topSpeed, boost, acc, health } = vehicle;
+  const { type, img, seats, shooters, trunk, amphibious, topSpeed, boost, acc, health } = vehicle;
 
   return (
     <div className={styles.container}>
