@@ -1,0 +1,17 @@
+/* Add this to your existing CSS file */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(75,85,99,.2);
+}
