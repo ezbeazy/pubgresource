@@ -1,4 +1,6 @@
-/* Add this to your existing CSS file */
+.container {
+  overflow-x: auto;
+}
 
 .table {
   width: 100%;
