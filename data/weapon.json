@@ -7,7 +7,7 @@
     "image": "/img/weapons/main/SMG-Thompson.webp",
     "link": "/weapons/main/smg#thompson",
     "caliber": ".45acp",
-    "capacity": "30rds",
+    "capacity": 30,
     "ironSiteZero": "100m",
     "fireSelect": "Semi / Full",
     "damage": 40,
@@ -270,7 +270,7 @@
     "caliber": "5.56",
     "capacity": 30,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / Burst",
+    "fireSelect": "Semi / 3 Rd Burst / Full",
     "damage": 43,
     "damageCurve": [
       {
@@ -562,7 +562,7 @@
     "caliber": "7.62",
     "capacity": 30,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / 3rd Burst / Full",
+    "fireSelect": "Semi / 3 Rd Burst / Full",
     "damage": 44,
     "damageCurve": [
       {
@@ -594,7 +594,7 @@
     "caliber": "7.62",
     "capacity": 30,
     "ironSiteZero": 100,
-    "fireSelect": "Semi / 2rd Burst",
+    "fireSelect": "Semi / 2 Rd Burst",
     "damage": 49,
     "damageCurve": [
       {
@@ -756,7 +756,7 @@
     "caliber": "7.62",
     "capacity": 50,
     "ironSiteZero": 100,
-    "fireSelect": "Full / Full High",
+    "fireSelect": "Low / High",
     "damage": 42,
     "damageCurve": [
       {
@@ -1689,7 +1689,7 @@
     "type": "DMR",
     "image": "/img/weapons/main/DMR-Dragunov.webp",
     "link": "/weapons/main/dmr#dragonov",
-    "caliber": "7.62mm",
+    "caliber": "7.62",
     "capacity": 10,
     "ironSiteZero": 100,
     "fireSelect": "N/A",
