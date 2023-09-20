@@ -13,43 +13,36 @@ const Map = ({ name }) => {
 
   const handleMouseDown = () => {
     setIsDragging(true);
-    console.log(isDragging);
-    console.log('mouse down');
-    
   };
 
   const handleMouseUp = () => {
     setIsDragging(false);
-    console.log(isDragging);
-    console.log('mouse up');
-    
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
   };
 
   const handleMouseMove = (e) => {
-    //console.log('mouse move');
+
     if (isDragging) {
       setPosition((prev) => {
         let newX = prev.x + e.movementX;
         let newY = prev.y + e.movementY;
   
-        const viewport = document.getElementById('mapViewport');
-        const viewportWidth = viewport.clientWidth;
-        const viewportHeight = viewport.clientHeight;
+        const viewportBox = document.getElementById('mapViewport').getBoundingClientRect();
+        const viewportWidth = viewportBox.width;
+        const viewportHeight = viewportBox.height;
         
-        const mapContent = document.getElementById('mapContent');
-        const mapContentWidth = mapContent.clientWidth;
-        const mapContentHeight = mapContent.clientHeight;
-
-        const mapContentRect = mapContent.getBoundingClientRect();
-        
-        const scaledMapWidth = mapContentRect.width;
-        const scaledMapHeight = mapContentRect.height;
+        const contentBox = document.getElementById('mapContent').getBoundingClientRect();
+        const contentWidth = contentBox.width;
+        const contentHeight = contentBox.height;
   
-        const minX = viewportWidth - mapContentWidth;
-        const maxX = 0;
+        const minX = (viewportWidth - contentWidth)/2;
+        const maxX = (contentWidth - viewportWidth)/2;
   
-        const minY = viewportHeight - mapContentHeight;
-        const maxY = 0;
+        const minY = (viewportHeight - contentHeight)/2;
+        const maxY = (contentHeight - viewportHeight)/2;
   
         // Keep within boundaries
         newX = Math.max(minX, Math.min(maxX, newX));
@@ -65,13 +58,16 @@ const Map = ({ name }) => {
     mapViewport.addEventListener('mousemove', handleMouseMove);
     mapViewport.addEventListener('mouseup', handleMouseUp);
     mapViewport.addEventListener('mousedown', handleMouseDown);
+    mapViewport.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
       mapViewport.removeEventListener('mousemove', handleMouseMove);
       mapViewport.removeEventListener('mouseup', handleMouseUp);
       mapViewport.removeEventListener('mousedown', handleMouseDown);
+      mapViewport.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, [isDragging]);
+  
 
   return (
     <div className={styles.container}>
@@ -83,6 +79,7 @@ const Map = ({ name }) => {
         <div id="mapContent" className={styles.contents}
           style={{
             transform: `translate(${position.x}px, ${position.y}px) scale(${zoom})`,
+            transition: 'transform 0.1s ease'
           }}
         >
           <img 
@@ -91,7 +88,7 @@ const Map = ({ name }) => {
             className={styles.mapImage} 
             draggable="false" 
           />
-          {mapData.secretRooms.map((room, index) => (
+          {mapData.secretRooms && mapData.secretRooms.map((room, index) => (
           <img
             key={index}
             src="/img/map-elements/pubg-secret-key-yellow.webp"

@@ -2,11 +2,7 @@
     {
         "id": 1,
         "name":"Erengal",
-        "image": "/img/maps/Erangel_Main_High_Res.webp",
-        "secretRooms": [
-          { "x": 50, "y": 50 },
-          { "x": 100, "y": 100 }
-        ]
+        "image": "/img/maps/Erangel_Main_High_Res.webp"
     },
     {
         "id": 2,
@@ -41,7 +37,21 @@
     {
         "id": 8,
         "name":"Taego",
-        "image":"/img/maps/Taego_Main_High_Res.webp"
+        "image":"/img/maps/Taego_Main_High_Res.webp",
+        "secretRooms": [
+          { "x": 133, "y": 101 },
+          { "x": 253, "y": 117 },
+          { "x": 486, "y": 155 },
+          { "x": 697, "y": 192 },
+          { "x": 95, "y": 327 },
+          { "x": 718, "y": 323 },
+          { "x": 90, "y": 517 },
+          { "x": 442, "y": 487 },
+          { "x": 643, "y": 550 },
+          { "x": 238, "y": 638 },
+          { "x": 495, "y": 635 },
+          { "x": 638, "y": 717 }
+        ]
     },
     {
         "id": 9,
