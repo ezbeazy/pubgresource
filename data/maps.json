@@ -1,56 +1,51 @@
 [
     {
         "id": 1,
-        "mapName":"Erengal",
-        "mapImg": "/img/maps/Erangel_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Erengal",
+        "image": "/img/maps/Erangel_Main_High_Res.webp",
+        "secretRooms": [
+          { "x": 50, "y": 50 },
+          { "x": 100, "y": 100 }
+        ]
     },
     {
         "id": 2,
-        "mapName":"Miramar",
-        "mapImg": "/img/maps/Miramar_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Miramar",
+        "image": "/img/maps/Miramar_Main_High_Res.webp"
     },
     {
         "id": 3,
-        "mapName":"Vikendi",
-        "mapImg": "/img/maps/Vikendi_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Vikendi",
+        "image": "/img/maps/Vikendi_Main_High_Res.webp"
     },
     {
         "id": 4,
-        "mapName":"Sanhok",
-        "mapImg": "/img/maps/Sanhok_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Sanhok",
+        "image": "/img/maps/Sanhok_Main_High_Res.webp"
     },
     {
         "id": 5,
-        "mapName":"Karakin",
-        "mapImg": "/img/maps/Karakin_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Karakin",
+        "image": "/img/maps/Karakin_Main_High_Res.webp"
     },
     {
         "id": 6,
-        "mapName":"Paramo",
-        "mapImg": "/img/maps/Paramo_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Paramo",
+        "image": "/img/maps/Paramo_Main_High_Res.webp"
     },
     {
         "id": 7,
-        "mapName":"Haven",
-        "mapImg": "/img/maps/Haven_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Haven",
+        "image": "/img/maps/Haven_Main_High_Res.webp"
     },
     {
         "id": 8,
-        "mapName":"Taego",
-        "mapImg":"/img/maps/Taego_Main_High_Res.webp",
-        "secretRoomImg": "/img/maps/taego-secret-rooms.webp"
+        "name":"Taego",
+        "image":"/img/maps/Taego_Main_High_Res.webp"
     },
     {
         "id": 9,
-        "mapName":"Deston",
-        "mapImg": "/img/maps/Deston_Main_High_Res.webp",
-        "secretRoomImg": ""
+        "name":"Deston",
+        "image": "/img/maps/Deston_Main_High_Res.webp"
     }
 ]
