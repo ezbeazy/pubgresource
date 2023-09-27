@@ -13,25 +13,28 @@
 .contents {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  
   position: relative;
+  transform-origin: 50% 50%;
 }
 
 .mapImg {
   display: inline-block;
   position: absolute;
   width: 100%;
+
 }
 
 .pins {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
+
 }
 
 .pin {
   position: absolute;
   box-sizing: content-box;
+  transform: translate(-50%, -150%);
   border-radius: 50%;
   border: 4px solid yellow;
   width: 4px;

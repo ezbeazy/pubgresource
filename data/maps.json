@@ -3,77 +3,104 @@
         "id": 1,
         "name":"Erengal",
         "image": "/img/maps/Erangel_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [8, 8]
     },
     {
         "id": 2,
         "name":"Miramar",
         "image": "/img/maps/Miramar_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [8, 8]
     },
     {
         "id": 3,
         "name":"Vikendi",
         "image": "/img/maps/Vikendi_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [8, 8]
     },
     {
         "id": 4,
         "name":"Sanhok",
         "image": "/img/maps/Sanhok_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [4, 4]
     },
     {
         "id": 5,
         "name":"Karakin",
         "image": "/img/maps/Karakin_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [2, 2]
     },
     {
         "id": 6,
         "name":"Paramo",
         "image": "/img/maps/Paramo_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [3, 3]
     },
     {
         "id": 7,
         "name":"Haven",
         "image": "/img/maps/Haven_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [1, 1]
     },
     {
         "id": 8,
         "name":"Taego",
         "image":"/img/maps/Taego_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [8, 8],
         "secretRooms": [
-          { "x": 133, "y": 101 },
-          { "x": 253, "y": 117 },
-          { "x": 486, "y": 155 },
-          { "x": 697, "y": 192 },
-          { "x": 95, "y": 327 },
-          { "x": 718, "y": 323 },
-          { "x": 90, "y": 517 },
-          { "x": 442, "y": 487 },
-          { "x": 643, "y": 550 },
-          { "x": 238, "y": 638 },
-          { "x": 495, "y": 635 },
-          { "x": 638, "y": 717 }
+          { "x": 1405, "y": 1194 },
+          { "x": 2585, "y": 1354 },
+          { "x": 4855, "y": 1727 },
+          { "x": 6944, "y": 2087 },
+          { "x": 1023, "y": 3429 },
+          { "x": 7163, "y": 3380 },
+          { "x": 958, "y": 5286 },
+          { "x": 4444, "y": 4994 },
+          { "x": 6421, "y": 5608 },
+          { "x": 2433, "y": 6482 },
+          { "x": 4948, "y": 6455 },
+          { "x": 6371, "y": 7256 }
         ]
     },
     {
         "id": 9,
         "name":"Deston",
         "image": "/img/maps/Deston_Main_High_Res.webp",
-        "size": [8192, 8192],
+        "size": {
+          "width": 8192, 
+          "height": 8192
+        },
         "gridSize": [8, 8]
     }
 ]

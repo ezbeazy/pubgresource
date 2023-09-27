@@ -17,10 +17,11 @@ const MapBox = ({ name }) => {
   const mapRef = useRef(null);
 
   function consoleLog() {
-    console.log("Vieport "+Object.values(viewportSize));
-    console.log("Default MapSize "+Object.values(mapData.size));
-    console.log("Map Size "+Object.values(mapSize));
-    console.log(zoom);
+    console.log("Viewport: "+Object.values(viewportSize));
+    console.log("Default MapSize: "+Object.values(mapData.size));
+    console.log("Map Size: "+Object.values(mapSize));
+    console.log("Scale: "+scale);
+    console.log("Zoom: "+zoom);
   };
 
   const handleZoomIn = () => {
@@ -43,8 +44,17 @@ const MapBox = ({ name }) => {
     const handleMouseUp = () => {
       setIsDragging(false);
     };
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (e) => {
       console.log('Mouse Move');
+      if (isDragging) {
+        setPosition((prev) => {
+          let newX = prev.x + e.movementX;
+          let newY = prev.y + e.movementY;
+    
+          //const adjusted = adjustBoundaries(newX, newY);
+          return {x: newX, y: newY};
+        });
+      }
     };
     const handleMouseLeave = () => {
       setIsDragging(false);
@@ -68,6 +78,13 @@ const MapBox = ({ name }) => {
     };
   }, [isDragging]);
 
+  //Handle Dragging
+  useEffect(() => {
+    const mapContent = document.getElementById('mapContent');
+    mapContent.style.transform = `translate(${position.x}px, ${position.y}px)`;
+    mapContent.style.transition = 'transform 100ms ease';
+  }, [position.x, position.y]);
+
   //Handle Map Zoom
   useEffect(() => {
     const map = document.getElementById('mapImg');
@@ -88,6 +105,7 @@ const MapBox = ({ name }) => {
 
   }, [zoom]);
 
+  //Handle Resize Scaling
   useEffect(() => {
     
     if(!viewportRef.current) return;
@@ -102,6 +120,9 @@ const MapBox = ({ name }) => {
           width: mapRef.current.offsetWidth,
           height: mapRef.current.offsetHeight
         });
+        setScale(
+          mapRef.current.offsetWidth / mapData.size.width
+        );
       };
     });
 
@@ -116,20 +137,19 @@ const MapBox = ({ name }) => {
   return (
     <>
     <div className={styles.container}>
-      <div>{viewportSize.width}</div>
       <div className={styles.buttons}>
         <button className={styles.zoomButton} onClick={handleZoomIn}>+</button>
         <button className={styles.zoomButton} onClick={handleZoomOut}>-</button>
       </div>
       <div id="mapBoxViewport" className={styles.viewport} ref={viewportRef}>
-        <div className={styles.contents}>
+        <div id="mapContent" className={styles.contents}>
           <div id="mapImg" className={styles.mapImg} ref={mapRef}>
             <img src={mapData.image} alt={`${name}`} draggable="false"/>
           </div>
           <div id="pins" className={styles.pins}>
             {
               mapData.secretRooms && mapData.secretRooms.map((room, index) => (
-                <div key={index} className={styles.pin} style={{left: room.x, top: room.y}}>
+                <div key={index} className={styles.pin} style={{left: (room.x * scale), top: (room.y * scale)}}>
                 </div>
               ))
             }
