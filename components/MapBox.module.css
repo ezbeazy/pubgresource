@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  margin: 25px 0px;
+}
+
+.viewport {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.contents {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  
+  position: relative;
+}
+
+.mapImg {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+}
+
+.pins {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.pin {
+  position: absolute;
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 4px solid yellow;
+  width: 4px;
+  height: 4px;
+}
+
+.pin::after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  bottom: -15px;
+  left: -3px;
+  border: 5px solid transparent;
+  border-top: 9px solid yellow;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.zoomButton {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
