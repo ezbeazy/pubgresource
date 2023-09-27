@@ -12,12 +12,14 @@ const MapBox = ({ name }) => {
   const [isDragging, setIsDragging] = useState(false);
 
   const mapData = maps.find((map) => map.name === name);
+
   const viewportRef = useRef(null);
+  const mapRef = useRef(null);
 
-
-
-  function consolLog() {
-    console.log(Object.values(viewportSize));
+  function consoleLog() {
+    console.log("Vieport "+Object.values(viewportSize));
+    console.log("Default MapSize "+Object.values(mapData.size));
+    console.log("Map Size "+Object.values(mapSize));
     console.log(zoom);
   };
 
@@ -96,6 +98,10 @@ const MapBox = ({ name }) => {
           width: viewportRef.current.offsetWidth,
           height: viewportRef.current.offsetHeight
         });
+        setMapSize({
+          width: mapRef.current.offsetWidth,
+          height: mapRef.current.offsetHeight
+        });
       };
     });
 
@@ -105,8 +111,7 @@ const MapBox = ({ name }) => {
     
   }, [viewportRef.current]);
 
-  //console.log(Object.values(viewportSize));
-  //console.log(zoom);
+  consoleLog();
 
   return (
     <>
@@ -118,7 +123,7 @@ const MapBox = ({ name }) => {
       </div>
       <div id="mapBoxViewport" className={styles.viewport} ref={viewportRef}>
         <div className={styles.contents}>
-          <div id="mapImg" className={styles.mapImg}>
+          <div id="mapImg" className={styles.mapImg} ref={mapRef}>
             <img src={mapData.image} alt={`${name}`} draggable="false"/>
           </div>
           <div id="pins" className={styles.pins}>
