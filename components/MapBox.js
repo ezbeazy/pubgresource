@@ -41,19 +41,36 @@ const MapBox = ({ name }) => {
   const debouncedZoomIn = debounce(handleZoomIn, 50);
   const debouncedZoomOut = debounce(handleZoomOut, 50);
 
-  const handleMouseDown = () =>  {
+  const handleMouseDown = (e) =>  {
     setIsDragging(true);
+    if (e.type === 'touchstart') {
+      e.preventDefault(); // Prevent mouse event emulation
+    }
   };
-  const handleMouseUp = () => {
+  const handleMouseUp = (e) => {
     setIsDragging(false);
+    if (e.type === 'touchend') {
+      e.preventDefault(); // Prevent mouse event emulation
+    }
   };
 
   const handleMouseMove = (e) => {
     if (isDragging) {
+      let movementX, movementY;
+  
+      if (e.type === 'touchmove') {
+        e.preventDefault(); // Prevent mouse event emulation
+        movementX = e.touches[0].clientX - e.targetTouches[0].clientX;
+        movementY = e.touches[0].clientY - e.targetTouches[0].clientY;
+      } else {
+        movementX = e.movementX;
+        movementY = e.movementY;
+      }
+  
       setPosition((prev) => {
-        let newX = prev.x + e.movementX;
-        let newY = prev.y + e.movementY;
-    
+        let newX = prev.x + movementX;
+        let newY = prev.y + movementY;
+  
         // Calculate the clamped position based on boundaries
         const clampedPosition = clampPosition(newX, newY);
         return clampedPosition;
@@ -61,33 +78,53 @@ const MapBox = ({ name }) => {
     }
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (e) => {
     setIsDragging(false);
+    if (e.type === 'touchcancel') {
+      e.preventDefault(); // Prevent mouse event emulation
+    }
   };
 
   //Handle Listeners
   useEffect(() => {
     const viewport = document.getElementById('viewport');
    
-    if (!isDragging) {
-      viewport.addEventListener('mousedown', handleMouseDown);
-      viewport.removeEventListener('mouseup', handleMouseUp);
-      viewport.removeEventListener('mousemove', handleMouseMove);
-      viewport.removeEventListener('mouseleave', handleMouseLeave);
-    } else {
-      viewport.removeEventListener('mousedown', handleMouseDown);
-      viewport.addEventListener('mouseup', handleMouseUp);
-      viewport.addEventListener('mousemove', handleMouseMove);
-      viewport.addEventListener('mouseleave', handleMouseLeave);
+    const events = {
+      'mousedown': handleMouseDown,
+      'mouseup': handleMouseUp,
+      'mousemove': handleMouseMove,
+      'mouseleave': handleMouseLeave,
+      'touchstart': handleMouseDown,
+      'touchend': handleMouseUp,
+      'touchmove': handleMouseMove,
+      'touchcancel': handleMouseLeave
     };
+    
+    if (!isDragging) {
+      for (const [event, handler] of Object.entries(events)) {
+        if (event === 'mousedown' || event === 'touchstart') {
+          viewport.addEventListener(event, handler);
+        } else {
+          viewport.removeEventListener(event, handler);
+        }
+      }
+    } else {
+      for (const [event, handler] of Object.entries(events)) {
+        if (event !== 'mousedown' && event !== 'touchstart') {
+          viewport.addEventListener(event, handler);
+        } else {
+          viewport.removeEventListener(event, handler);
+        }
+      }
+    }
 
     return () => {
-      viewport.removeEventListener('mousedown', handleMouseDown);
-      viewport.removeEventListener('mouseup', handleMouseUp);
-      viewport.removeEventListener('mousemove', handleMouseMove);
-      viewport.removeEventListener('mouseleave', handleMouseLeave);
+      for (const [event, handler] of Object.entries(events)) {
+        viewport.removeEventListener(event, handler);
+      }
     };
   }, [isDragging]);
+
 
   //Handle Dragging
   useEffect(() => {
