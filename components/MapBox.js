@@ -10,6 +10,7 @@ const MapBox = ({ name }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [boundaries, setBoundaries] = useState({ minX: 0, maxX: 0, minY: 0, maxY: 0 });
   const [isDragging, setIsDragging] = useState(false);
+  const [touchStart, setTouchStart] = useState({ x: 0, y: 0 });
 
   const mapData = maps.find((map) => map.name === name);
 
@@ -45,6 +46,7 @@ const MapBox = ({ name }) => {
     setIsDragging(true);
     if (e.type === 'touchstart') {
       e.preventDefault(); // Prevent mouse event emulation
+      setTouchStart({ x: e.touches[0].clientX, y: e.touches[0].clientY });
     }
   };
   const handleMouseUp = (e) => {
@@ -60,8 +62,11 @@ const MapBox = ({ name }) => {
   
       if (e.type === 'touchmove') {
         e.preventDefault(); // Prevent mouse event emulation
-        movementX = e.touches[0].clientX - e.targetTouches[0].clientX;
-        movementY = e.touches[0].clientY - e.targetTouches[0].clientY;
+        const currentX = e.touches[0].clientX;
+        const currentY = e.touches[0].clientY;
+        movementX = currentX - touchStart.x;
+        movementY = currentY - touchStart.y;
+        setTouchStart({ x: currentX, y: currentY });
       } else {
         movementX = e.movementX;
         movementY = e.movementY;
@@ -179,6 +184,16 @@ const MapBox = ({ name }) => {
       return { minX, maxX, minY, maxY };
     });
   }, [viewportSize, zoom]);
+
+  const consoleLog = () => {
+    console.log('viewportSize: ', Object.values(viewportSize));
+    console.log('mapSize: ', Object.values(mapSize));
+    console.log('zoom: ', zoom);
+    console.log('scale: ', scale);
+    console.log('position: ', Object.values(position));
+    console.log('boundaries: ', Object.values(boundaries));
+  }
+  consoleLog();
 
   return (
     <>
