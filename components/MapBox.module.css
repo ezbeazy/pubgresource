@@ -10,25 +10,24 @@
   width: 100%;
 }
 
-.contents {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
+.layers {
   position: relative;
-  transform-origin: 50% 50%;
+  transform-origin: center center;
+  /*will-change: transform;*/
 }
 
 .mapImg {
   display: inline-block;
   position: absolute;
   width: 100%;
-
+  transform-origin: center center;
 }
 
 .pins {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
-
+  transform-origin: center center;
 }
 
 .pin {
