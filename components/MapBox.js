@@ -16,16 +16,6 @@ const MapBox = ({ name }) => {
   const viewportRef = useRef(null);
   const layersRef = useRef(null);
 
-  function consoleLog() {
-    console.log("  *** NEW LOG ***");
-    console.log("Viewport: "+Object.values(viewportSize));
-    console.log("Default MapSize: "+Object.values(mapData.size));
-    console.log("Map Size: "+Object.values(mapSize));
-    console.log("Scale: "+scale);
-    console.log("Zoom: "+zoom);
-    console.log("Boundaries: "+Object.values(boundaries));
-  };
-
   const clampPosition = (x, y) => {
     const clampedX = Math.min(Math.max(x, boundaries.minX), boundaries.maxX);
     const clampedY = Math.min(Math.max(y, boundaries.minY), boundaries.maxY);
@@ -44,11 +34,9 @@ const MapBox = ({ name }) => {
 
   const handleZoomIn = () => {
     setZoom((prevZoom) => Math.min(prevZoom + 1, 10));
-    console.log('Zoom In');
   };
   const handleZoomOut = () => {
     setZoom((prevZoom) => Math.max(prevZoom - 1, 1));
-    console.log('Zoom Out');
   };
   const debouncedZoomIn = debounce(handleZoomIn, 50);
   const debouncedZoomOut = debounce(handleZoomOut, 50);
@@ -61,7 +49,6 @@ const MapBox = ({ name }) => {
   };
 
   const handleMouseMove = (e) => {
-    console.log('Mouse Move');
     if (isDragging) {
       setPosition((prev) => {
         let newX = prev.x + e.movementX;
@@ -76,7 +63,6 @@ const MapBox = ({ name }) => {
 
   const handleMouseLeave = () => {
     setIsDragging(false);
-    console.log('Mouse Leave');
   };
 
   //Handle Listeners
@@ -118,41 +104,6 @@ const MapBox = ({ name }) => {
     layers.style.transition = 'transform 1000ms ease';
 
   }, [zoom, boundaries]);
-  
-  useEffect(() => {
-    /*
-    const layers = document.getElementById('layers');
-  
-    // Slight initial zoom in and out to pre-trigger browser optimization
-    layers.style.transform = 'scale(1.001)';
-    setZoom(1);
-    // Restore to normal
-    setTimeout(() => {
-      layers.style.transform = 'scale(1)';
-    }, 50); // Use a very short duration here
-
-    console.log("pre-trigger browse useEffect");*/
-
-      setViewportSize({ width: 0, height: 0 });
-      setMapSize({ width: 0, height: 0 });
-      setZoom(1);
-      setScale(1);
-      setPosition({ x: 0, y: 0 });
-      setBoundaries({ minX: 0, maxX: 0, minY: 0, maxY: 0 });
-      setIsDragging(false);
-
-    return () => {
-      // This part runs when the component unmounts.
-      setViewportSize({ width: 0, height: 0 });
-      setMapSize({ width: 0, height: 0 });
-      setZoom(1);
-      setScale(1);
-      setPosition({ x: 0, y: 0 });
-      setBoundaries({ minX: 0, maxX: 0, minY: 0, maxY: 0 });
-      setIsDragging(false);
-    };
-    
-  }, []); // Empty dependency array so it only runs on mount
 
   //Handle Resize Scaling
   useEffect(() => {
@@ -177,8 +128,6 @@ const MapBox = ({ name }) => {
 
     viewportObserver.observe(viewportRef.current);
 
-    console.log("resize Scaling useEffect");
-
     return () => viewportObserver.disconnect();
     
   }, [viewportRef]);
@@ -193,8 +142,6 @@ const MapBox = ({ name }) => {
       return { minX, maxX, minY, maxY };
     });
   }, [viewportSize, zoom]);
-
-  consoleLog();
 
   return (
     <>
