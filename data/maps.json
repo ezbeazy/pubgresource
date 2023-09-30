@@ -72,7 +72,7 @@
     {
         "id": 8,
         "name":"Taego",
-        "image":"/img/maps/Taego_Main_High_Res.webp",
+        "image":"/img/maps/Taego_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
