@@ -30,6 +30,26 @@ const MapBox = ({ name }) => {
     console.log('boundaries: ', Object.values(boundariesRef.current));
   };
 
+  const mapGridImageArray = (() => {
+    const imageArray = [];
+    
+    for (let row = 1; row <= 32; row++) {
+      for (let col = 1; col <= 32; col++) {
+        const counter = (row - 1) * 32 + col;
+        const paddedCounter = String(counter).padStart(2, '0');
+        const fileName = `${mapData.name}_tile_${paddedCounter}.webp`;
+  
+        imageArray.push({
+          fileName,
+          row,
+          col,
+        });
+      };
+    };
+    
+    return imageArray;
+  })();
+
   const updateBoundaries = () => {
 
     console.log('viewport.width:'+viewport.width);
@@ -241,8 +261,22 @@ const MapBox = ({ name }) => {
       </div>
       <div id="viewport" className={styles.viewport} ref={viewportRef}>
         <div id="layers" className={styles.layers} ref={layersRef}>
-          <div id="mapImg" className={styles.mapImg}>
-            <img src={mapData.image} alt={`${name}`} draggable="false"/>
+          <div className={styles.gridContainer}>
+            {mapGridImageArray.map((gridImage, index) => {
+              const imagePath = `${mapData.gridImages}/${gridImage.fileName}`;
+              return (
+                <img
+                  key={index}
+                  src={imagePath}
+                  alt={gridImage.fileName}
+                  className="gridImage"
+                  style={{
+                    gridRow: gridImage.row,
+                    gridColumn: gridImage.col,
+                  }}
+                />
+              );
+            })}
           </div>
           <div id="pins" className={styles.pins}>
             { mapData.secretRooms && mapData.secretRooms.map((room, index) => (

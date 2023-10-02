@@ -73,6 +73,7 @@
         "id": 8,
         "name":"Taego",
         "image":"/img/maps/Taego_Main_Low_Res.webp",
+        "gridImages":"/img/maps/taego/grid",
         "size": {
           "width": 8192, 
           "height": 8192
