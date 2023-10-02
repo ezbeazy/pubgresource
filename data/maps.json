@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name":"Erengal",
-        "image": "/img/maps/Erangel_Main_High_Res.webp",
+        "image": "/img/maps/Erangel_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name":"Miramar",
-        "image": "/img/maps/Miramar_Main_High_Res.webp",
+        "image": "/img/maps/Miramar_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "name":"Vikendi",
-        "image": "/img/maps/Vikendi_Main_High_Res.webp",
+        "image": "/img/maps/Vikendi_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name":"Sanhok",
-        "image": "/img/maps/Sanhok_Main_High_Res.webp",
+        "image": "/img/maps/Sanhok_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "name":"Karakin",
-        "image": "/img/maps/Karakin_Main_High_Res.webp",
+        "image": "/img/maps/Karakin_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "name":"Paramo",
-        "image": "/img/maps/Paramo_Main_High_Res.webp",
+        "image": "/img/maps/Paramo_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -62,7 +62,7 @@
     {
         "id": 7,
         "name":"Haven",
-        "image": "/img/maps/Haven_Main_High_Res.webp",
+        "image": "/img/maps/Haven_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
@@ -96,7 +96,7 @@
     {
         "id": 9,
         "name":"Deston",
-        "image": "/img/maps/Deston_Main_High_Res.webp",
+        "image": "/img/maps/Deston_Main_Low_Res.webp",
         "size": {
           "width": 8192, 
           "height": 8192
