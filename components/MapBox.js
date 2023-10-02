@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, use } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import maps from '../data/maps.json';
 import styles from './MapBox.module.css';
 
@@ -18,6 +18,7 @@ const MapBox = ({ name }) => {
   const viewportRef = useRef(null);
   const layersRef = useRef(null);
 
+  /*Logging
   const consoleLog = (location) => {
     console.log(" ** NEW LOG ** "+location);
     console.log('viewport ', Object.values(viewport));
@@ -28,13 +29,9 @@ const MapBox = ({ name }) => {
     console.log('scale: ', scaleRef.current);
     console.log('position: ', Object.values(position));
     console.log('boundaries: ', Object.values(boundariesRef.current));
-  };
+  };*/
 
   const updateBoundaries = () => {
-
-    console.log('viewport.width:'+viewport.width);
-    console.log('mapSizeRef.current.width:'+mapSizeRef.current.width);
-    console.log('zoomRef:'+zoomRef.current);
     
     boundariesRef.current = {
       minX: (viewport.width - (mapSizeRef.current.width * zoomRef.current)) / 2,
@@ -43,7 +40,6 @@ const MapBox = ({ name }) => {
       maxY: ((mapSizeRef.current.height * zoomRef.current) - viewport.height) / 2,
     };
 
-    console.log(Object.values(boundariesRef.current));
   };
 
   const updateMapSize = () => {
@@ -51,7 +47,6 @@ const MapBox = ({ name }) => {
       width: (viewport.width * zoomRef.current),
       height: (viewport.height * zoomRef.current)
     };
-    console.log('updateMapSize')
   };
 
   const updateScale = () => {
@@ -77,13 +72,11 @@ const MapBox = ({ name }) => {
   const handleZoomIn = () => {
     zoomRef.current = Math.min(zoomRef.current + 1, 10);
     updateBoundaries();
-    console.log('zoom in: ', zoomRef.current);
     setZoom(zoomRef.current);
   };
   const handleZoomOut = () => {
     zoomRef.current = Math.max(zoomRef.current - 1, 1);
     updateBoundaries();
-    console.log('zoom out: ', zoomRef.current);
     setZoom(zoomRef.current);
   };
   const debouncedZoomIn = debounce(handleZoomIn, 50);
@@ -210,7 +203,6 @@ const MapBox = ({ name }) => {
         width: viewportRef.current.offsetWidth,
         height: viewportRef.current.offsetHeight
       });
-      consoleLog('viewportObserver');
       updateScale();
     });
 
@@ -229,8 +221,6 @@ const MapBox = ({ name }) => {
     };
     
   }, []);
-  
-  consoleLog('before return');
 
   return (
     <>
