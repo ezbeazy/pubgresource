@@ -219,7 +219,7 @@ const MapBox = ({ name }) => {
     // Handle Event Listeners on Mount and Unmount
     const viewport = document.getElementById('viewport');
     viewport.addEventListener('mousedown', handleMouseDown);
-    viewport.addEventListener('touchstart', handleMouseDown);
+    viewport.addEventListener('mousedown', handleMouseDown);
 
     return () => {
       viewportObserver.disconnect(); 
