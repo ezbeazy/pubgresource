@@ -2,7 +2,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import styles from './LeafMap.module.css';
 
-const LeafMap = () => {
+const LeafMap = ({mapName, markers, polylines}) => {
   const MapWithNoSSR = dynamic(() => import("./Leafloader"), {
     ssr: false
   });
@@ -10,7 +10,8 @@ const LeafMap = () => {
   return (
     <main>
       <div className={styles.leafMapContainer}>
-        <MapWithNoSSR />
+        <MapWithNoSSR mapName={mapName} markers={markers} polylines={polylines}>
+        </MapWithNoSSR>
       </div>
     </main>
   );

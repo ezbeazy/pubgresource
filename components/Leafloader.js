@@ -1,22 +1,35 @@
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, Popup, TileLayer, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-const LeafLoader = ({ name }) => {
+const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
 
   const bounds = [[0, 0], [-256, 256]];
 
+  const iconLocation = new L.Icon({
+    iconUrl: '/img/markers/location-yellow.svg',
+    iconRetinaUrl: '/img/markers/location-yellow.svg',
+    iconSize: new L.Point(30, 30),
+    iconAnchor: new L.Point(15, 30),
+});
+
   return(
-    <MapContainer crs={L.CRS.Simple} maxBounds={bounds} maxBoundsViscosity={0} center={[256, 256]} zoom={1} maxZoom={5} minZoom={1} scrollWheelZoom={true} style={{ width: "100%", paddingBottom: "100%"}}>
+    <MapContainer crs={L.CRS.Simple} maxBounds={bounds} maxBoundsViscosity={1} center={[-128, 128]} zoom={1} maxZoom={5} minZoom={.5} scrollWheelZoom={true} style={{ width: "100%", paddingBottom: "100%"}}>
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="http://localhost:3000/img/maps/leaflet/taego/{z}_{x}_{y}.jpg"
+        tileSize={256}
+        attribution='&copy; <a href="https://pubgresource.com">PubgResource</a> contributors'
+        url={`/img/maps/leaflet/${mapName}/{z}_{x}_{y}.webp`}
       />
-      <Marker position={[-20, 20]}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-      </Marker>
+      {polylines.map((polyline, index) => (
+        <Polyline key={index} positions={polyline.positions} color={polyline.color} weight={polyline.weight} opacity={polyline.opacity}/>
+      ))}
+      {markers.map((marker, index) => (
+        <Marker key={index} position={marker.position} icon={iconLocation}>
+          <Popup>
+            {marker.popupContent}
+          </Popup>
+        </Marker>
+      ))}
     </MapContainer>
   );
 };
