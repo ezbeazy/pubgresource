@@ -339,7 +339,14 @@ const MapBox = ({ name }) => {
 
     viewportObserver.observe(viewport);
 
+<<<<<<< HEAD
     console.log(boundaries.current);
+=======
+    // Handle Event Listeners on Mount and Unmount
+    const viewport = document.getElementById('viewport');
+    viewport.addEventListener('mousedown', handleMouseDown);
+    viewport.addEventListener('mousedown', handleMouseDown);
+>>>>>>> leaflet
 
     return () => {
       //Cleanup on unmount

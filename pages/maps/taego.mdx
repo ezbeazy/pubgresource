@@ -1,8 +1,34 @@
 import MapBox from '../../components/MapBox';
+import LeafMap from '../../components/LeafMap';
 
 ## Map
 
 <MapBox name="Taego"/>
+
+<LeafMap 
+mapName="taego"
+markers={[
+    { position: [-14.60, 17.14], popupContent: 'Secret Key' },
+    { position: [-16.52, 31.52], popupContent: 'Secret Key' },
+    { position: [-21.09, 59.27], popupContent: 'Secret Key' },
+    { position: [-25.48, 84.77], popupContent: 'Secret Key' },
+    { position: [-41.73, 12.47], popupContent: 'Secret Key' },
+    { position: [-41.25, 87.44], popupContent: 'Secret Key' },
+    { position: [-64.52, 11.70], popupContent: 'Secret Key' },
+    { position: [-60.96, 54.25], popupContent: 'Secret Key' },
+    { position: [-68.45, 78.37], popupContent: 'Secret Key' },
+    { position: [-79.12, 29.68], popupContent: 'Secret Key' },
+    { position: [-78.74, 60.37], popupContent: 'Secret Key' },
+    { position: [-88.57, 77.77], popupContent: 'Secret Key' },
+  ]} 
+polylines = {[ 
+  { positions: [[-10, 10], [-20, 10], [-20, 20], [-10, 20], [-10, 10]], 
+    color: "lightblue", 
+    weight: 10,
+    opacity: .5
+  }
+]}
+/>
 
 ## Details
 
