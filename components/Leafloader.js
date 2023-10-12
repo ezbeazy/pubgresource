@@ -1,10 +1,13 @@
 import { MapContainer, Marker, Popup, TileLayer, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import maps from '../data/maps.json';
 
 const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
 
   const bounds = [[0, 0], [-256, 256]];
+  const mapScale = 256 / 100;
+  const mapData = maps.find((map) => map.name === mapName);
 
   const iconLocation = new L.Icon({
     iconUrl: '/img/markers/location-yellow.svg',
@@ -24,7 +27,7 @@ const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
         <Polyline key={index} positions={polyline.positions} color={polyline.color} weight={polyline.weight} opacity={polyline.opacity}/>
       ))}
       {markers.map((marker, index) => (
-        <Marker key={index} position={marker.position} icon={iconLocation}>
+        <Marker key={index} position={[marker.position[0] * mapScale, marker.position[1] * mapScale]}  icon={iconLocation}>
           <Popup>
             {marker.popupContent}
           </Popup>
