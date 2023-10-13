@@ -21,7 +21,6 @@ const MapBox = ({ name }) => {
   const zoomInButtonRef = useRef(null);
   const zoomOutButtonRef = useRef(null);
 
-<<<<<<< HEAD
   /*Logging
   const consoleLog = (location) => {
     console.log(" ** NEW LOG ** "+location);
@@ -34,10 +33,8 @@ const MapBox = ({ name }) => {
     console.log('position: ', Object.values(position));
     console.log('boundaries: ', Object.values(boundariesRef.current));
   };*/
-=======
-  //Get the map data
+
   const mapData = maps.find((map) => map.name === name);
->>>>>>> map-grid
 
   //Put the map grid images into an array
   const mapGridImageArray = (() => {
@@ -62,12 +59,6 @@ const MapBox = ({ name }) => {
 
   //Helper Functions
   const updateBoundaries = () => {
-<<<<<<< HEAD
-=======
-
-    const offsetX = (mapTransformOrigin.current.x - (viewportRef.current.offsetWidth / 2)) * zoom.current;
-    const offsetY = (mapTransformOrigin.current.y - (viewportRef.current.offsetHeight / 2)) * zoom.current;
->>>>>>> map-grid
     
     boundaries.current = {
       minX: (viewportRef.current.offsetWidth - (mapRef.current.offsetWidth * zoom.current)) / 2,
@@ -75,7 +66,6 @@ const MapBox = ({ name }) => {
       minY: (viewportRef.current.offsetHeight - (mapRef.current.offsetHeight * zoom.current)) / 2,
       maxY: ((mapRef.current.offsetHeight * zoom.current) - viewportRef.current.offsetHeight) / 2,
     };
-<<<<<<< HEAD
 
   };
 
@@ -84,9 +74,6 @@ const MapBox = ({ name }) => {
       width: (viewport.width * zoomRef.current),
       height: (viewport.height * zoomRef.current)
     };
-=======
-    console.log('Update Boundaries: ', boundaries.current)
->>>>>>> map-grid
   };
 
   const updateScale = () => {
@@ -129,18 +116,16 @@ const MapBox = ({ name }) => {
     zoom.current = Math.min(zoom.current * 2, 16);
     updateScale();
     updateBoundaries();
-<<<<<<< HEAD
     setZoom(zoomRef.current);
-  };
-  const handleZoomOut = () => {
+  });
+  
+  const handleZoomOut = debounce(() => {
     zoomRef.current = Math.max(zoomRef.current - 1, 1);
     updateBoundaries();
     setZoom(zoomRef.current);
-  };
+
   const debouncedZoomIn = debounce(handleZoomIn, 50);
   const debouncedZoomOut = debounce(handleZoomOut, 50);
-=======
->>>>>>> map-grid
 
     if (mapRef.current) {
       
@@ -285,13 +270,12 @@ const MapBox = ({ name }) => {
     };
     handleListeners();
 
-<<<<<<< HEAD
     return () => {
       for (const [event, handler] of Object.entries(hciEvents)) {
         viewport.removeEventListener(event, handler);
       };
     };
-  };
+  });
 
   //Render Dragging
   useEffect(() => {
@@ -327,11 +311,6 @@ const MapBox = ({ name }) => {
         width: viewportRef.current.offsetWidth,
         height: viewportRef.current.offsetHeight
       });
-=======
-    //Lisen for window resize and update Ref Values: viewport size, map boundaries, and scale
-    const viewportObserver = new ResizeObserver(entries => {
-      updateBoundaries();
->>>>>>> map-grid
       updateScale();
       updateTransformOrigin();
       //mapGridRef.current.style.transformOrigin = `${mapTransformOrigin.current.x}px ${mapTransformOrigin.current.y}px`;
@@ -339,14 +318,7 @@ const MapBox = ({ name }) => {
 
     viewportObserver.observe(viewport);
 
-<<<<<<< HEAD
     console.log(boundaries.current);
-=======
-    // Handle Event Listeners on Mount and Unmount
-    const viewport = document.getElementById('viewport');
-    viewport.addEventListener('mousedown', handleMouseDown);
-    viewport.addEventListener('mousedown', handleMouseDown);
->>>>>>> leaflet
 
     return () => {
       //Cleanup on unmount
@@ -356,11 +328,6 @@ const MapBox = ({ name }) => {
       };
     };
   }, []);
-<<<<<<< HEAD
-=======
-
-  
->>>>>>> map-grid
 
   return (
     <>
