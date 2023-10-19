@@ -14,9 +14,7 @@ const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
     iconRetinaUrl: '/img/markers/location-yellow.svg',
     iconSize: new L.Point(30, 30),
     iconAnchor: new L.Point(15, 30),
-  });
-
-  
+  });  
 
   return(
     <MapContainer crs={L.CRS.Simple} maxBounds={bounds} maxBoundsViscosity={1} center={[-128, 128]} zoom={2} maxZoom={5} minZoom={0} scrollWheelZoom={true} attributionControl={false} zoomControl={false} style={{ width: "100%", paddingBottom: "100%"}}>
@@ -28,6 +26,7 @@ const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
       <ZoomControl position={'topright'} />
       <LayersControl position={'topright'}>
         <LayersControl.Overlay name="Tunnels" checked>
+        <LayerGroup>
         {polylines.map((polyline, index) => {
             // Scale the positions by multiplying each coordinate by mapScale
             const scaledPositions = polyline.positions.map(coord => [
@@ -48,6 +47,7 @@ const LeafLoader = ({ mapName, markers = [], polylines = [] }) => {
               />
             );
           })}
+        </LayerGroup>
         </LayersControl.Overlay>
         <LayersControl.Overlay name="Secret Rooms" checked>
         <LayerGroup>
