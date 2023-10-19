@@ -5,8 +5,12 @@ import LeafMap from '../../components/LeafMap';
 
 <LeafMap 
 mapName="karakin"
-polylines = {[ 
-  { positions: [
+layers={[
+  {
+  name: 'Tunnels',
+  checked: true,
+  polylines: [
+    { positions: [
       //1
       [-33.59838, 23.93474],
       [-33.59838, 24.13474],
@@ -358,7 +362,9 @@ polylines = {[
     stroke: true,
     fill: true,
     fillOpacity: .50
-  },
+  }
+  ]
+  }
 ]}
 />
 

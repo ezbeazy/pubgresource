@@ -6,7 +6,11 @@ import LeafMap from '../../components/LeafMap';
 
 <LeafMap 
 mapName="taego"
-markers={[
+layers={[
+  {
+    name: 'Secret Rooms',
+    checked: true,
+    markers: [
     { position: [-14.60, 17.14], popupContent: 'Secret Key Room' },
     { position: [-16.52, 31.52], popupContent: 'Secret Key Room' },
     { position: [-21.09, 59.27], popupContent: 'Secret Key Room' },
@@ -19,7 +23,9 @@ markers={[
     { position: [-79.12, 29.68], popupContent: 'Secret Key Room' },
     { position: [-78.74, 60.37], popupContent: 'Secret Key Room' },
     { position: [-88.57, 77.77], popupContent: 'Secret Key Room' },
-  ]}
+    ]
+  }
+]}
 />
 
 ## Details
