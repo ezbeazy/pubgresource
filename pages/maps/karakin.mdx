@@ -1,8 +1,37 @@
 import MapBox from '../../components/MapBox';
+import LeafMap from '../../components/LeafMap';
 
 ## Map
 
-<MapBox name="Karakin"/>
+<LeafMap 
+mapName="karakin"
+polylines = {[ 
+  { positions: [[-33.60, 23.90], [-33.60, 24.10], [-34.60, 24.10], [-34.60, 24.40], [-34.90, 24.40], [-33.60, 24.10], [-37.20, 24.10], [-37.20, 22.30], [-37.00, 22.30], [-37.00, 23.90], [-33.60, 23.90]], 
+    color: "lightblue", 
+    weight: 1,
+    opacity: .80,
+    stroke: true,
+    fill: true,
+    fillOpacity: .40
+  },
+  { positions: [[-31.70, 58.00], [-31.30, 58.62], [-32.96, 59.71], [-32.63, 60.25]], 
+    color: "lightblue", 
+    weight: 10,
+    opacity: .80,
+    stroke: true,
+    fill: true,
+    fillOpacity: .50
+  },
+  { positions: [[-52.60, 32.40], [-51.70, 31.10]], 
+    color: "lightblue", 
+    weight: 10,
+    opacity: .70,
+    stroke: true,
+    fill: true,
+    fillOpacity: .20
+  },
+]}
+/>
 
 ## Details
 

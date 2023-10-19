@@ -1,3 +1,42 @@
 span.logo {
   font-weight: bold;
 }
+
+
+
+
+.leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-layers {
+  border: 0px !important;
+  background: none;
+}
+
+.leaflet-touch .leaflet-control-layers:hover{
+  background: #fff;
+}
+
+.leaflet-control-zoom a.leaflet-control-zoom-in, 
+.leaflet-control-zoom a.leaflet-control-zoom-out {
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+  border-radius: 0px !important;
+  border: 0px;
+}
+
+.leaflet-control-zoom a.leaflet-control-zoom-in:hover, 
+.leaflet-control-zoom a.leaflet-control-zoom-out:hover {
+  background-color: darkgreen;
+}
+
+.leaflet-control-container a.leaflet-control-layers-toggle {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 0px !important;
+  box-sizing: content-box;
+  background-color: green;
+}
