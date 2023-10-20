@@ -2,9 +2,6 @@ span.logo {
   font-weight: bold;
 }
 
-
-
-
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-layers {
   border: 0px !important;
   background: none;
@@ -19,7 +16,7 @@ span.logo {
   box-sizing: content-box;
   width: 30px;
   height: 30px;
-  margin: 5px;
+  margin-bottom: 5px;
   cursor: pointer;
   color: white;
   background-color: green;
@@ -35,7 +32,6 @@ span.logo {
 .leaflet-control-container a.leaflet-control-layers-toggle {
   width: 30px;
   height: 30px;
-  margin: 5px;
   border-radius: 0px !important;
   box-sizing: content-box;
   background-color: green;
