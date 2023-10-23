@@ -47,8 +47,8 @@ const LeafLoader = ({ mapName, layers = [] }) => {
   const mapData = maps.find((map) => map.name === mapName);
 
   const iconLocation = new L.Icon({
-    iconUrl: '/img/markers/location-yellow.svg',
-    iconRetinaUrl: '/img/markers/location-yellow.svg',
+    iconUrl: '/img/markers/marker-vault.svg',
+    iconRetinaUrl: '/img/markers/marker-vault.svg',
     iconSize: new L.Point(30, 30),
     iconAnchor: new L.Point(15, 30),
   });
