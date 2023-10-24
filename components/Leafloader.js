@@ -3,27 +3,47 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import maps from '../data/maps.json';
 
-const renderMarkers = (markers, mapScale, iconLocation) => {
+const renderMarkers = (markers, mapScale, markerSvg) => {
   return markers && markers.length
-    ? markers.map((marker, index) => (
-        <Marker
-          key={index}
-          position={[marker.position[0] * mapScale, marker.position[1] * mapScale]}
-          icon={iconLocation}
-        >
-          <Popup>{marker.popupContent}</Popup>
-        </Marker>
-      ))
+    ? markers.map((marker, index) => {
+      // Convert from [x, y] to [-y, x]
+      const convertedPosition = [-marker.position[1] / 10, marker.position[0] / 10];
+
+        const customIcon = new L.Icon({
+          iconUrl: markerSvg,
+          iconRetinaUrl: markerSvg,
+          iconSize: new L.Point(30, 30),
+          iconAnchor: new L.Point(15, 30),
+        });
+        return (
+          <Marker
+            key={index}
+            position={[convertedPosition[0] * mapScale, convertedPosition[1] * mapScale]}
+            icon={customIcon}
+          >
+            <Popup>{marker.popupContent}</Popup>
+          </Marker>
+        );
+      })
     : null;
 };
+
 
 const renderPolylines = (polylines, mapScale) => {
   return polylines && polylines.length
     ? polylines.map((polyline, index) => {
-        const scaledPositions = polyline.positions.map((coord) => [
-          coord[0] * mapScale,
-          coord[1] * mapScale,
+
+        // Convert from [x, y] to [-y, x] and divide by 10
+        const convertedPositions = polyline.positions.map((coord) => [
+          -coord[1] / 10,
+          coord[0] / 10
         ]);
+
+        const scaledPositions = convertedPositions.map((coord) => [
+          coord[0] * mapScale,
+          coord[1] * mapScale
+        ]);
+        
         return (
           <Polyline
             key={index}
@@ -45,13 +65,6 @@ const LeafLoader = ({ mapName, layers = [] }) => {
   const bounds = [[0, 0], [-256, 256]];
   const mapScale = 256 / 100;
   const mapData = maps.find((map) => map.name === mapName);
-
-  const iconLocation = new L.Icon({
-    iconUrl: '/img/markers/marker-vault.svg',
-    iconRetinaUrl: '/img/markers/marker-vault.svg',
-    iconSize: new L.Point(30, 30),
-    iconAnchor: new L.Point(15, 30),
-  });
 
   return(
     <MapContainer 
@@ -77,8 +90,8 @@ const LeafLoader = ({ mapName, layers = [] }) => {
       {layers.map((layer, index) => (
           <LayersControl.Overlay name={layer.name} checked={layer.checked} key={index}>
             <LayerGroup>
-              {renderMarkers(layer.markers, mapScale, iconLocation)}
-              {renderPolylines(layer.polylines, mapScale)}
+            {renderMarkers(layer.markers, mapScale, layer.markerSvg)}
+            {renderPolylines(layer.polylines, mapScale)}
             </LayerGroup>
           </LayersControl.Overlay>
         ))}
