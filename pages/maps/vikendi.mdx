@@ -5,7 +5,113 @@ import LeafMap from '../../components/LeafMap';
 
 <LeafMap
 mapName="vikendi"
-layers={[]}
+layers={[
+  {
+    name: 'Gas Station',
+    checked: true,
+    markerSvg: '/img/markers/marker-gas.svg',
+    markers: [
+    { position: [373.12629185088,154.598829406173], popupContent: 'Gas Station 1' },
+    { position: [240.316114320456,379.941980018706], popupContent: 'Gas Station 2' },
+    { position: [619.619078481258,306.19479780913], popupContent: 'Gas Station 3' },
+    { position: [626.699116067354,485.304065813406], popupContent: 'Gas Station 4' },
+    { position: [354.106703513364,642.739125233638], popupContent: 'Gas Station 5' },
+    { position: [631.727103017578,570.217725721439], popupContent: 'Gas Station 6' },
+    { position: [513.35494098362,825.771352741691], popupContent: 'Gas Station 7' }
+    ]
+  },
+  {
+    name: 'Glider Spawns',
+    checked: true,
+    markerSvg: '/img/markers/marker-glider.svg',
+    markers: [
+    { position: [204.819927906305,178.59232927186], popupContent: 'Glider Spawn 1' },
+    { position: [444.14192831575,286.616851654348], popupContent: 'Glider Spawn 2' },
+    { position: [651.934408739383,231.246631723173], popupContent: 'Glider Spawn 3' },
+    { position: [670.766059626188,371.794981167238], popupContent: 'Glider Spawn 4' },
+    { position: [216.17744768222,485.255057912299], popupContent: 'Glider Spawn 5' },
+    { position: [532.804628214309,539.120175275045], popupContent: 'Glider Spawn 6' },
+    { position: [161.151090197949,710.511127243074], popupContent: 'Glider Spawn 7' },
+    { position: [818.707666903414,691.980822092322], popupContent: 'Glider Spawn 8' },
+    { position: [294.341565375243,874.35037042841], popupContent: 'Glider Spawn 9' },
+    { position: [612.577967814606,851.412661641389], popupContent: 'Glider Spawn 10' }
+    ]
+  },
+  {
+    name: 'Train Stations',
+    checked: true,
+    markerSvg: '/img/markers/marker-train.svg',
+    markers: [
+    { position: [222.134521475745,258.270727643862], popupContent: 'Train Station 1' },
+    { position: [256.444646576623,388.938128890703], popupContent: 'Train Station 2' },
+    { position: [426.030112722197,413.20442741367], popupContent: 'Train Station 3' },
+    { position: [603.724805347319,490.010478348182], popupContent: 'Train Station 4' }
+    ]
+  },
+  {
+    name: 'Tram Stations',
+    checked: true,
+    markerSvg: '/img/markers/marker-train.svg',
+    markers: [
+    { position: [493.630674907996,151.805736874594], popupContent: 'Tram Station 1' },
+    { position: [328.371307231609,175.063830369627], popupContent: 'Tram Station 2' },
+    { position: [197.647213060744,284.1191384131], popupContent: 'Tram Station 3' },
+    { position: [312.247426737563,409.265384023365], popupContent: 'Tram Station 4' },
+    { position: [338.838095899854,295.157748635405], popupContent: 'Tram Station 5' },
+    { position: [481.883230250737,401.706901237197], popupContent: 'Tram Station 6' },
+    { position: [667.847116017745,188.899472661951], popupContent: 'Tram Station 7' },
+    { position: [728.328643063511,325.381446000332], popupContent: 'Tram Station 8' },
+    { position: [612.407712784615,397.840693468768], popupContent: 'Tram Station 9' },
+    { position: [473.892691557202,767.005373043145], popupContent: 'Tram Station 10' },
+    { position: [630.861060273788,699.497553999394], popupContent: 'Tram Station 11' }
+    ]
+  },
+  {
+    name: 'Caves',
+    checked: true,
+    markerSvg: '/img/markers/marker-cave.svg',
+    markers: [
+    { position: [350.568957097087,167.563830369625], popupContent: 'Cave 1' },
+    { position: [639.957731589392,167.129683650956], popupContent: 'Cave 2' },
+    { position: [733.953116733084,213.821230157], popupContent: 'Cave 3' },
+    { position: [712.791992235178,352.211124441442], popupContent: 'Cave 4' },
+    { position: [582.065542482248,435.481679903553], popupContent: 'Cave 5' },
+    { position: [808.247670103402,469.266753684677], popupContent: 'Cave 6' },
+    { position: [456.255762328678,754.281662821], popupContent: 'Cave 7' },
+    { position: [627.35054417616,731.339021428683], popupContent: 'Cave 8' },
+    { position: [760.372105198466,703.812838348125], popupContent: 'Cave 9' },
+    { position: [453.629415127868,796.61772110545], popupContent: 'Cave 10' }
+    ]
+  },
+  {
+    name: 'Outpost Labs',
+    checked: true,
+    markerSvg: '/img/markers/marker-lab.svg',
+    markers: [
+    { position: [402.709384276788,129.913220691434], popupContent: 'Lab 1' },
+    { position: [395.209384276783,237.792967377992], popupContent: 'Lab 2' },
+    { position: [278.840215394141,267.756638951112], popupContent: 'Lab 3' },
+    { position: [248.094908900864,328.676156652743], popupContent: 'Lab 4' }
+    ]
+  },
+  {
+    name: 'Vault Bunkers',
+    checked: true,
+    markerSvg: '/img/markers/marker-vault.svg',
+    markers: [
+    { position: [337.411356617782,193.691664145297], popupContent: 'Vault 1' },
+    { position: [664.612866070996,161.519848066984], popupContent: 'Vault 2' },
+    { position: [768.276075110151,301.814246335169], popupContent: 'Vault 3' },
+    { position: [503.849526638678,394.569282677277], popupContent: 'Vault 4' },
+    { position: [171.273674075129,471.801304725763], popupContent: 'Vault 5' },
+    { position: [840.9911360618,476.766753684633], popupContent: 'Vault 6' },
+    { position: [578.682893538826,608.10613424608], popupContent: 'Vault 7' },
+    { position: [292.336700656889,691.297491703726], popupContent: 'Vault 8' },
+    { position: [745.372105198527,721.626332767896], popupContent: 'Vault 9' },
+    { position: [485.211829659168,803.117255007452], popupContent: 'Vault 10' }
+    ]
+  },
+]}
 />
 
 
