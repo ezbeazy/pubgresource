@@ -4,7 +4,6 @@ span.logo {
 
 .leaflet-touch .leaflet-bar, .leaflet-touch .leaflet-control-layers {
   border: 0px !important;
-  background: none;
 }
 
 .leaflet-touch .leaflet-control-layers:hover{
