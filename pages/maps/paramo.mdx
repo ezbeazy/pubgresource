@@ -5,7 +5,22 @@ import LeafMap from '../../components/LeafMap';
 
 <LeafMap
 mapName="paramo"
-layers={[]}
+layers={[
+  {
+    name: 'Secret Vaults',
+    checked: true,
+    markerSvg: '/img/markers/marker-vault.svg',
+    markers: [
+    { position: [276.470168162598,358.808269679706], popupContent: 'Vault 1' },
+    { position: [397.048202672324,316.78916235621], popupContent: 'Vault 2' },
+    { position: [624.043143003776,489.853033812096], popupContent: 'Vault 3' },
+    { position: [127.876267433556,634.811930049784], popupContent: 'Vault 4' },
+    { position: [433.495858916443,630.573100764324], popupContent: 'Vault 5' },
+    { position: [816.686026323565,573.560846874664], popupContent: 'Vault 6' },
+    { position: [517.376834805394,804.153160004518], popupContent: 'Vault 7' }
+    ]
+  },
+]}
 />
 
 ## Details
